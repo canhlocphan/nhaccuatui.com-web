@@ -19,10 +19,18 @@
     "ecmaVersion": 12,
     "sourceType": "module"
   },
-  "plugins": ["react"],
+  "plugins": [
+    "react"
+  ],
   "rules": {
-    "indent": ["error", 2],
-    "quotes": ["error", "single"],
+    "indent": [
+      "error",
+      2
+    ],
+    "quotes": [
+      "error",
+      "single"
+    ],
     "no-console": "error",
     "object-curly-newline": 0,
     "react/jsx-props-no-spreading": 0,
@@ -32,6 +40,10 @@
     "jsx-a11y/click-events-have-key-events": 0,
     "jsx-a11y/no-noninteractive-element-interactions": 0,
     "jsx-a11y/anchor-is-valid": 0,
-    "linebreak-style": ["off", "windows"]
+    "react/jsx-one-expression-per-line": "off",
+    "linebreak-style": [
+      "off",
+      "windows"
+    ]
   }
 }
