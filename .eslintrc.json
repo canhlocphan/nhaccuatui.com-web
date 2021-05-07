@@ -4,13 +4,8 @@
     "es2021": true
   },
   "extends": [
-    "plugin:react/recommended",
     "airbnb",
-    "eslint:recommended",
-    "plugin:import/errors",
-    "plugin:import/warnings",
-    "plugin:jsx-a11y/recommended",
-    "plugin:react-hooks/recommended"
+    "prettier"
   ],
   "parserOptions": {
     "ecmaFeatures": {
@@ -19,7 +14,10 @@
     "ecmaVersion": 12,
     "sourceType": "module"
   },
-  "plugins": ["react"],
+  "plugins": [
+    "eslint-comments",
+    "react-hooks"
+  ],
   "rules": {
     "react/jsx-wrap-multilines": 0,
     "react/prop-types": 0,
@@ -30,7 +28,11 @@
     "import/no-unresolved": [
       2,
       {
-        "ignore": ["^@/", "^umi/", "environments"]
+        "ignore": [
+          "^@/",
+          "^umi/",
+          "environments"
+        ]
       }
     ],
     "import/no-extraneous-dependencies": [
@@ -55,7 +57,10 @@
     // Too restrictive, writing ugly code to defend against a very unlikely scenario: https://eslint.org/docs/rules/no-prototype-builtins
     "no-prototype-builtins": "off",
     "import/prefer-default-export": "off",
-    "import/no-default-export": [0, "camel-case"],
+    "import/no-default-export": [
+      0,
+      "camel-case"
+    ],
     // Too restrictive: https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/destructuring-assignment.md
     "react/destructuring-assignment": "off",
     "react/jsx-filename-extension": "off",
@@ -78,7 +83,10 @@
     "react/self-closing-comp": "off",
     "react/jsx-props-no-spreading": 0,
     // Conflict with prettier
-    "arrow-body-style": ["error", "as-needed"],
+    "arrow-body-style": [
+      "error",
+      "as-needed"
+    ],
     "object-curly-newline": 0,
     "implicit-arrow-linebreak": 0,
     "operator-linebreak": 0,
@@ -95,13 +103,19 @@
     "no-unused-vars": "error",
     "no-underscore-dangle": 0,
     "no-shadow": "off",
-    "import/extensions": ["error", "never"],
+    "import/extensions": [
+      "error",
+      "never"
+    ],
     "import/order": 0,
     "eslint-comments/no-unlimited-disable": "off",
     "react/no-unescaped-entities": [
       "error",
       {
-        "forbid": [">", "}"]
+        "forbid": [
+          ">",
+          "}"
+        ]
       }
     ],
     "max-len": [
