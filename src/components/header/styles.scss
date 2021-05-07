@@ -1,0 +1,11 @@
+.header {
+    display: block;
+    height: 56px;
+    width: 100%;
+    padding: 6px 0 7px 0;
+    position: fixed;
+    z-index: 9999;
+
+    background: red;
+    border-bottom: #dadada solid 1px;
+}
