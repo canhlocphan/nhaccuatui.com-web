@@ -1,14 +1,35 @@
 import React from "react";
 import ReactDOM from "react-dom";
-import "./index.css";
-import "antd/dist/antd.css";
-import App from "./App";
 import reportWebVitals from "./reportWebVitals";
 
+// pages
+import About from "./pages/about";
+import Home from "./pages/home";
+
+// components
+import Header from "./components/header";
+import Footer from "./components/footer";
+
+// scss
+import "./index.scss";
+import "antd/dist/antd.css";
+
+// libs
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+
 ReactDOM.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
+  <Router>
+    <Header />
+    <Switch>
+      <Route path="/" exact>
+        <Home />
+      </Route>
+      <Route path="/about">
+        <About />
+      </Route>
+    </Switch>
+    <Footer />
+  </Router>,
   document.getElementById("root")
 );
 

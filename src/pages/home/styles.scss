@@ -1,3 +1,12 @@
 .home {
-    width: 100%;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 145px auto auto 145px;
+  grid-column-gap: 30px;
+  .box-content {
+        grid-column: 1/5;
+  }
+  .box-left {
+    grid-column-start: 2;
+  }
 }
