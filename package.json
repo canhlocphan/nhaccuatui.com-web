@@ -1,4 +1,5 @@
 {
+  "homepage": "http://canhlocphan.github.io/nhaccuatui.com-web",
   "name": "nhaccuatui.com-web",
   "version": "0.1.0",
   "private": true,
@@ -48,7 +49,9 @@
     "prettier": "prettier -c \"**/src/**\" --write",
     "lint-staged:js": "eslint --cache --fix --ext .js,.jsx",
     "lint-staged:style": "stylelint --fix --syntax scss",
-    "lint-staged:prettier": "prettier -c --write"
+    "lint-staged:prettier": "prettier -c --write",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "eslintConfig": {
     "extends": [
