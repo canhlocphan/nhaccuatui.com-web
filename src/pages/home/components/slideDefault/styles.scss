@@ -10,6 +10,7 @@
     .main-slide {
       width: 100%;
       height: 339px;
+      cursor: pointer;
     }
     .option-slide {
       position: relative;
@@ -33,6 +34,18 @@
         margin: 8px 4px 0 4px;
         padding: 0 0 5px 0 !important;
         overflow: hidden;
+        cursor: pointer;
+        .active {
+          position: absolute;
+          width: 150px;
+          height: 62px;
+          padding-bottom: 0;
+          background: none;
+          border: 4px solid #e74c3c;
+        }
+        .none {
+          border: 0;
+        }
       }
     }
   }

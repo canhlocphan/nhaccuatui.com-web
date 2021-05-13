@@ -57,10 +57,12 @@
             background: url("https://stc-id.nixcdn.com/v11/images/icon-repeat.png") 0 -202px no-repeat;
           }
         }
+        &:hover {
+          background: rgba(0, 0, 0, 0.3);
+        }
       }
       .avatar {
         position: absolute;
-        z-index: 1;
         width: 152px;
         height: 152px;
       }
@@ -71,7 +73,6 @@
       color: #23262d;
       font-size: 15px;
       line-height: 19px;
-      cursor: pointer;
       .name-song {
         width: 152px;
         margin: 0 0 5px 0;
@@ -79,6 +80,7 @@
         overflow: hidden;
         font-size: 14px;
         text-overflow: ellipsis;
+        cursor: pointer;
       }
       &:hover {
         color: rgb(0, 204, 255);

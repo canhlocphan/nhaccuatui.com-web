@@ -1,9 +1,9 @@
 import React from "react";
 
 // mains
-import BoxContent from "./mains/boxContent";
-import BoxLeft from "./mains/boxLeft";
-import BoxRight from "./mains/boxRight";
+import BoxContent from "./mains/BoxContent";
+import BoxLeft from "./mains/BoxLeft";
+import BoxRight from "./mains/BoxRight";
 
 import "./styles.scss";
 

@@ -24,15 +24,17 @@ const SlideDefault = () => {
         <div className="main-slide" style={{ background: `url(${imageDefault})` }}></div>
         <div className="option-slide">
           <ul className="option-slide-container">
-            {Home.slideDefaultImage.map(({ id, small, large }) => (
+            {Home.slideDefaultImage.map(({ id, small, large, title }) => (
               <li
                 key={id}
                 className="option-slide-item"
+                title={title}
                 onMouseEnter={() => {
                   setImageDefault(large);
                   setId(parseInt(id, 10));
                 }}
               >
+                <span className={`${imageDefault === large ? "active" : "none"}`}></span>
                 <img src={small} alt="option-slide-item" style={{ cursor: "pointer" }}></img>
               </li>
             ))}

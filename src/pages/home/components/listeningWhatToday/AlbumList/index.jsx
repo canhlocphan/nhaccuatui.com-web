@@ -1,5 +1,6 @@
 // libs
 import React from "react";
+import Album from "../../Album";
 
 // others
 import "./styles.scss";
@@ -11,16 +12,7 @@ const AlbumList = (props) => (
       const titleName = temp[0];
       return (
         <li className="box-album" key={id} title={title}>
-          <div className="album">
-            <div className="action-info">
-              <div className="view-listening">
-                <div className="icon-listening"></div>
-                <div>{view}</div>
-              </div>
-              <div className="icon-play"></div>
-            </div>
-            <img className="avatar" src={image} alt="avatar"></img>
-          </div>
+          <Album image={image} view={view}></Album>
           <div className="info">
             <div className="name-song">{titleName}</div>
           </div>

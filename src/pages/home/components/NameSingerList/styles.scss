@@ -1,0 +1,23 @@
+.name-singer-list {
+  display: flex;
+  flex-direction: row;
+  width: 195px;
+  overflow: hidden;
+  font-size: 12px;
+  font-weight: 300;
+  color: #acacac;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  cursor: pointer;
+  :hover {
+    color: rgb(0, 204, 255);
+    transition: all 0.5 linear;
+  }
+  .space {
+    margin-right: 2px;
+    font-size: 13px;
+  }
+}
+h4 {
+  color: #acacac;
+}
