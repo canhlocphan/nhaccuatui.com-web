@@ -1,12 +1,12 @@
 import React from "react";
 
 // components
-import TrendArtist from "../../components/trendArtist";
-import DiscoveryPlayList from "../../components/discoveryPlaylist";
-import TocpicMusic from "../../components/topicMusic";
-import ChartMV from "../../components/chartMV";
-import TopHundred from "../../components/topHundred";
-import ChartMusic from "../../components/chartMusic";
+import TrendArtist from "../../components/TrendArtist";
+import DiscoveryPlayList from "../../components/DiscoveryPlaylist";
+import TocpicMusic from "../../components/TopicMusic";
+import ChartMV from "../../components/ChartMV";
+import TopHundred from "../../components/TopHundred";
+import ChartMusic from "../../components/ChartMusic";
 
 import "./styles.scss";
 

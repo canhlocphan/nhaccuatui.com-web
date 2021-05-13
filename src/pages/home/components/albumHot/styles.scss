@@ -1,7 +1,9 @@
 .album-hot {
   width: 100%;
-  height: 526px;
+  height: auto;
   margin-bottom: 10px;
-
-  background: darkcyan;
+  .album-hot-container {
+    width: 100%;
+    overflow: hidden;
+  }
 }

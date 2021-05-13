@@ -3,5 +3,9 @@
   height: 636px;
   margin-bottom: 20px;
 
-  background: darkgreen;
+  // background: darkgreen;
+  .mv-hot-container {
+    width: 100%;
+    overflow: hidden;
+  }
 }

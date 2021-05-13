@@ -1,21 +1,20 @@
+// libs
 import React from "react";
 import ReactDOM from "react-dom";
 import reportWebVitals from "./reportWebVitals";
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 
 // pages
-import About from "./pages/about";
-import Home from "./pages/home";
+import About from "./pages/About";
+import Home from "./pages/Home";
 
 // components
 import Header from "./components/header";
 import Footer from "./components/footer";
 
-// scss
+// others
 import "./index.scss";
 import "antd/dist/antd.css";
-
-// libs
-import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 
 ReactDOM.render(
   <Router>
