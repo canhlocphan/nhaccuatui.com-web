@@ -1,0 +1,19 @@
+.title-box-key {
+  width: auto;
+  display: flex;
+  flex-direction: row;
+  margin: 0 0 10px 0;
+  font-size: 26px;
+  font-weight: 400;
+  line-height: 36px;
+  color: #23262d;
+  text-transform: uppercase;
+  .title {
+    padding: 0 20px 0 0;
+    font-weight: 400 !important;
+    color: #2daaed;
+    text-transform: uppercase;
+    background: url("https://stc-id.nixcdn.com/v11/images/icon-repeat.png") right -155px no-repeat;
+    cursor: pointer;
+  }
+}

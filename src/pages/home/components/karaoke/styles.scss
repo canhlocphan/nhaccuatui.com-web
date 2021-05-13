@@ -1,7 +1,9 @@
 .karaoke {
+  width: 100%;
+  height: 216px;
+  margin-bottom: 20px;
+  .karaoke-container {
     width: 100%;
-    height: 216px;
-    margin-bottom: 20px;
-    
-    background: palevioletred;
+    overflow: hidden;
+  }
 }

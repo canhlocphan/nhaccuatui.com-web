@@ -1,7 +1,11 @@
 .mv-hot {
+  width: 100%;
+  height: 636px;
+  margin-bottom: 20px;
+
+  // background: darkgreen;
+  .mv-hot-container {
     width: 100%;
-    height: 636px;
-    margin-bottom: 20px;
-    
-    background: darkgreen;
+    overflow: hidden;
+  }
 }

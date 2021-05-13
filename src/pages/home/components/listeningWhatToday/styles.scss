@@ -1,7 +1,8 @@
 .listening-what-today {
+  width: 100%;
+  margin-bottom: 10px;
+  .listening-what-today-container {
     width: 100%;
-    height: 226px;
-    margin-bottom: 20px;
-
-    background: brown;
+    overflow: hidden;
+  }
 }
