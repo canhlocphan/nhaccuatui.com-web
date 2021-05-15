@@ -1,5 +1,5 @@
 import React from "react";
-import ActionBox from "./components/actionBox";
+import ActionBox from "./components/ActionBox";
 
 import "./styles.scss";
 
