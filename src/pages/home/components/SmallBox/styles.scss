@@ -1,0 +1,35 @@
+.box {
+  cursor: pointer;
+  .overlay {
+    position: absolute;
+    z-index: 2;
+    width: 100%;
+    height: 100%;
+  }
+  &:hover .overlay {
+    background: rgba(0, 0, 0, 0.3);
+  }
+  .view-mv {
+    position: absolute;
+    right: 0;
+    z-index: 101;
+    display: flex;
+    flex-direction: row;
+    padding: 0 5px 0 15px;
+    font-size: 12px;
+    line-height: 24px;
+    color: #c7c7c7;
+    background: url("https://stc-id.nixcdn.com/v11/images/bg_view_listen.png") left top;
+    cursor: pointer;
+    .icon-view {
+      width: 14px;
+      height: 14px;
+      margin: 8px 3px 0 0;
+      background: url("https://stc-id.nixcdn.com/v11/images/icon-repeat.png") 0 -237px no-repeat;
+    }
+  }
+  &:hover .bg-video .icon-play {
+    opacity: 1;
+    transition: opacity 0.5s linear;
+  }
+}

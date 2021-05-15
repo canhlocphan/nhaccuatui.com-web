@@ -1,0 +1,38 @@
+.main-trend-artist {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 300px;
+  .main-artist-slide {
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+    .image {
+      width: 100%;
+      height: 100%;
+    }
+  }
+  .main-artist-info {
+    width: 100%;
+    height: 94px;
+    text-align: center;
+    .title {
+      margin: 16px 0 10px 0;
+      font-size: 14px;
+      font-weight: 500;
+      color: rgba(0, 0, 0, 0.5);
+    }
+    .artist-name {
+      margin-top: 0;
+      overflow: hidden;
+      font-size: 16px;
+      font-weight: bold;
+      color: rgba(0, 0, 0, 0.88);
+      text-decoration: none;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+      cursor: pointer;
+    }
+  }
+}

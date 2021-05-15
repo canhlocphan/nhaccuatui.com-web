@@ -3,8 +3,8 @@ import React from "react";
 
 // components
 import TitleBoxKey from "../../../../components/TitleBoxKey";
-import VideoLarge from "./VideoLarge";
-import VideoSmall from "./VideoSmall";
+import LargeVideoList from "../LargeVideoList";
+import SmallVideoList from "../SmallVideoList";
 
 // mocks
 import Home from "../../../../mocks/Home";
@@ -16,8 +16,8 @@ const MvHot = () => (
   <div className="mv-hot">
     <div className="mv-hot-container">
       <TitleBoxKey>MV HOT</TitleBoxKey>
-      <VideoLarge home={Home.mvHot}></VideoLarge>
-      <VideoSmall home={Home.mvHot}></VideoSmall>
+      <LargeVideoList home={Home.mvHot}></LargeVideoList>
+      <SmallVideoList home={Home.mvHot}></SmallVideoList>
     </div>
   </div>
 );

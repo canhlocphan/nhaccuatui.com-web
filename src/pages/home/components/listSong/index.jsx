@@ -3,7 +3,7 @@ import React from "react";
 
 // components
 import TitleBoxKey from "../../../../components/TitleBoxKey";
-import SongList from "./SongList";
+import SongList from "../SongList";
 
 // mocks
 import Home from "../../../../mocks/Home";

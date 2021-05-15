@@ -2,28 +2,20 @@
 import React from "react";
 
 // components
-import NameSingerList from "../NameSingerList";
+import ViewMV from "../ViewMV";
+import TimeVideo from "../TimeVideo";
+import BackgroundVideo from "../BackgroundVideo";
+import LargeVideoInformation from "../LargeVideoInformation";
 
 // others
 import "./styles.scss";
 
 const VideoLarge = (props) => (
   <div className="large-box-absolute">
-    <div className="view-mv">
-      <div className="icon-view"></div>
-      <div className="view">{props.view}</div>
-    </div>
-    <div className="view-time">{props.time}</div>
-    <div className="bg-video" title={props.title}>
-      <div className="icon-play"></div>
-      <img className="image" src={props.image} alt="video"></img>
-    </div>
-    <div className="name-video-large">
-      <h3 className="name-song" title={props.title}>
-        {props.nameSong}
-      </h3>
-      <NameSingerList title={props.title}></NameSingerList>
-    </div>
+    <ViewMV view={props.view}></ViewMV>
+    <TimeVideo time={props.time}></TimeVideo>
+    <BackgroundVideo image={props.image}></BackgroundVideo>
+    <LargeVideoInformation songName={props.songName} title={props.title}></LargeVideoInformation>
   </div>
 );
 

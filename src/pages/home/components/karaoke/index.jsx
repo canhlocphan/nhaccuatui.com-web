@@ -3,7 +3,7 @@ import React from "react";
 
 // components
 import TitleBoxKey from "../../../../components/TitleBoxKey";
-import VideoSmall from "../MvHot/VideoSmall";
+import SmallVideoList from "../SmallVideoList";
 
 // mocks
 import Home from "../../../../mocks/Home";
@@ -15,7 +15,7 @@ const Karaoke = () => (
   <div className="karaoke">
     <div className="karaoke-container">
       <TitleBoxKey>Karaoke</TitleBoxKey>
-      <VideoSmall home={Home.karaoke}></VideoSmall>
+      <SmallVideoList home={Home.karaoke}></SmallVideoList>
     </div>
   </div>
 );

@@ -59,7 +59,7 @@ const albumHot = [
     id: "9",
     image:
       "https://firebasestorage.googleapis.com/v0/b/main-page-b5c0f.appspot.com/o/nhaccuatui.com%2FalbumHot%2F1613711206713_300.jpg?alt=media&token=5b626ae9-7298-41d5-b72a-0d4b803cd8fd",
-    title: "The Book of Us : Negentropy - Chaos swallowed up in love - DAY 6",
+    title: "The Book of Us : Negentropy - DAY 6",
     view: "2.436",
   },
   {

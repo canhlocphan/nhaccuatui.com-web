@@ -75,7 +75,7 @@ const mvHot = [
     id: "10",
     large: "0",
     image: "https://avatar-ex-swe.nixcdn.com/mv/2021/04/05/2/9/7/1/1617599474787_268.jpg",
-    title: "Chưa Từng Thương Ai Đến Vậy (karaoke) - Khang Việt",
+    title: "Chưa Từng Thương Ai Đến Vậy (Karaoke) - Khang Việt",
     view: "910",
     time: "05:11",
   },

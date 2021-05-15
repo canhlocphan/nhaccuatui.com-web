@@ -6,7 +6,7 @@ import TitleBoxKey from "../../../../components/TitleBoxKey";
 
 // mocks
 import Home from "../../../../mocks/Home";
-import AlbumListAlbumHot from "./AlbumListAlbumHot";
+import AlbumList from "../AlbumList";
 
 // others
 import "./styles.scss";
@@ -15,7 +15,7 @@ const AlbumHot = () => (
   <div className="album-hot">
     <div className="album-hot-container">
       <TitleBoxKey>Mới phát hành</TitleBoxKey>
-      <AlbumListAlbumHot home={Home}></AlbumListAlbumHot>
+      <AlbumList home={Home}></AlbumList>
     </div>
   </div>
 );

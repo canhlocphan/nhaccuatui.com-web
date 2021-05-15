@@ -23,6 +23,9 @@ ReactDOM.render(
       <Route path="/" exact>
         <Home />
       </Route>
+      <Route path="/nhaccuatui.com-web" exact>
+        <Home />
+      </Route>
       <Route path="/about">
         <About />
       </Route>

@@ -1,17 +1,20 @@
 .name-singer-list {
   display: flex;
   flex-direction: row;
-  width: 195px;
+  width: 100%;
   overflow: hidden;
   font-size: 12px;
   font-weight: 300;
-  color: #acacac;
   text-overflow: ellipsis;
   white-space: nowrap;
   cursor: pointer;
-  :hover {
-    color: rgb(0, 204, 255);
-    transition: all 0.5 linear;
+  .name-singer {
+    color: #9a9a9a;
+    font-size: 12px;
+    &:hover {
+      color: rgb(0, 204, 255);
+      transition: all 0.5 linear;
+    }
   }
   .space {
     margin-right: 2px;

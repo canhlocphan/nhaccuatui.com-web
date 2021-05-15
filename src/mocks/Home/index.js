@@ -5,15 +5,17 @@ import mvHot from "./mvHot";
 import karaoke from "./karaoke";
 import entertainment from "./entertainment";
 import song from "./song";
+import trendArtist from "./trendArtist";
 
 const Home = {
-  slideDefaultImage: slideDefault,
+  slideDefault,
   listeningWhatToday,
   albumHot,
   mvHot,
   karaoke,
   entertainment,
   song,
+  trendArtist,
 };
 
 export default Home;

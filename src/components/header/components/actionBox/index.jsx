@@ -31,7 +31,7 @@ const ActionBox = () => (
   <ul className="action-box">
     <li className="logo"></li>
     <li>
-      <a target="_blank" href="https://beta.nhaccuatui.com/" rel="noreferrer">
+      <a href="/" rel="noreferrer">
         <img
           src="https://stc-id.nixcdn.com/v11/images/ic_new.png"
           alt="#phienbanmoi"

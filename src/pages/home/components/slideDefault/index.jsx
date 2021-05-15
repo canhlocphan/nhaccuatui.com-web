@@ -7,14 +7,14 @@ import Home from "../../../../mocks/Home";
 import "./styles.scss";
 
 const SlideDefault = () => {
-  const [imageDefault, setImageDefault] = useState(Home.slideDefaultImage[0].large);
+  const [imageDefault, setImageDefault] = useState(Home.slideDefault[0].large);
   const [id, setId] = useState(1);
   useEffect(() => {
     const time = setInterval(() => {
       if (parseInt(id, 10) === 5) {
         setId(1);
       } else setId(parseInt(id, 10) + 1);
-      setImageDefault(Home.slideDefaultImage[id - 1].large);
+      setImageDefault(Home.slideDefault[id - 1].large);
     }, 7000);
     return () => clearInterval(time);
   });
@@ -24,7 +24,7 @@ const SlideDefault = () => {
         <div className="main-slide" style={{ background: `url(${imageDefault})` }}></div>
         <div className="option-slide">
           <ul className="option-slide-container">
-            {Home.slideDefaultImage.map(({ id, small, large, title }) => (
+            {Home.slideDefault.map(({ id, small, large, title }) => (
               <li
                 key={id}
                 className="option-slide-item"

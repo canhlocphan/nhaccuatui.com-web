@@ -56,23 +56,3 @@
     height: 152px;
   }
 }
-.info {
-  z-index: 10;
-  width: 152px;
-  color: #23262d;
-  font-size: 15px;
-  line-height: 19px;
-  .name-song {
-    width: 152px;
-    margin: 0 0 5px 0;
-    padding-bottom: 0;
-    overflow: hidden;
-    font-size: 14px;
-    text-overflow: ellipsis;
-    cursor: pointer;
-  }
-  &:hover {
-    color: rgb(0, 204, 255);
-    transition: all 0.5 linear;
-  }
-}
