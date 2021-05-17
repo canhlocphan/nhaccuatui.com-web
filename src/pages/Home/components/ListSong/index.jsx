@@ -12,8 +12,8 @@ import Home from "../../../../mocks/Home";
 import "./styles.scss";
 
 const ListSong = () => (
-  <div className="list-song">
-    <div className="list-song-container">
+  <div className="list-song-container">
+    <div className="list-song">
       <TitleBoxKey>Bài Hát</TitleBoxKey>
       <SongList home={Home.song}></SongList>
     </div>

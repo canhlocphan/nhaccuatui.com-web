@@ -1,18 +1,16 @@
+// libs
 import React from "react";
 
 // component footer
-import AnotherFooter from "./anotherFooter";
-import CooperationFooter from "./cooperationFooter";
-import CopyrightFooter from "./copyrightFooter";
+import CopyrightFooter from "./components/CopyrightFooter";
+import UpFooter from "./components/UpFooter";
 
+// others
 import "./styles.scss";
 
 const Footer = () => (
-  <div className="footer">
-    <div style={{ width: "1170px" }}>
-      <CooperationFooter />
-      <AnotherFooter />
-    </div>
+  <div className="footer-wrapper">
+    <UpFooter></UpFooter>
     <CopyrightFooter />
   </div>
 );

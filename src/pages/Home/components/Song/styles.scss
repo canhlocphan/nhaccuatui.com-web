@@ -7,4 +7,10 @@
   white-space: nowrap;
   text-overflow: ellipsis;
   cursor: pointer;
+  .info-song {
+    width: 230px;
+    .name-song {
+      display: block;
+    }
+  }
 }

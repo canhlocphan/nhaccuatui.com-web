@@ -1,12 +1,16 @@
+// libs
 import React from "react";
-import ActionBox from "./components/ActionBox";
 
+// components
+import HeaderList from "./components/HeaderList";
+
+// others
 import "./styles.scss";
 
 const Header = () => (
-  <div className="header">
-    <div className="header-container">
-      <ActionBox />
+  <div className="header-wrapper">
+    <div className="header">
+      <HeaderList />
     </div>
   </div>
 );

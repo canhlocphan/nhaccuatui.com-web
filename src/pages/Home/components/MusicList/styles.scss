@@ -1,0 +1,17 @@
+.music-list {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  :nth-child(1) .rank {
+    color: #fff;
+  }
+  :nth-child(2) .rank {
+    color: #1abc9c;
+  }
+  :nth-child(3) .rank {
+    color: #f39c12;
+  }
+}

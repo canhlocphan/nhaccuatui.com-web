@@ -10,7 +10,7 @@ import "./styles.scss";
 
 const LargeVideoInformation = (props) => (
   <div className="name-video-large">
-    <LargeVideoName songName={props.songName}></LargeVideoName>
+    <LargeVideoName songName={props.songName} title={props.title}></LargeVideoName>
     <NameSingerList title={props.title}></NameSingerList>
   </div>
 );

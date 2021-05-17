@@ -1,0 +1,20 @@
+.box-title {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 100%;
+  .top-100-title {
+    margin: 45px 5px 10px 5px;
+    font-size: 22px;
+    text-transform: uppercase;
+    font-family: "NhacCuaTui", sans-serif;
+    color: #fff;
+  }
+  .top-100-line {
+    height: 1px;
+    background-color: rgba(255, 255, 255, 0.3);
+    float: left;
+    width: 43px;
+    margin-top: 60px;
+  }
+}

@@ -12,6 +12,7 @@ import "./styles.scss";
 
 const VideoLarge = (props) => (
   <div className="large-box-absolute">
+    <div className="overlay"></div>
     <ViewMV view={props.view}></ViewMV>
     <TimeVideo time={props.time}></TimeVideo>
     <BackgroundVideo image={props.image}></BackgroundVideo>

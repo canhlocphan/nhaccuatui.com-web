@@ -8,6 +8,15 @@
   font-size: 13px;
   line-height: 24px;
   .icon {
-    font-size: 12px;
+    font-size: 14px;
+  }
+  .icon-action {
+    margin-left: 6px;
+    font-size: 16px;
+    cursor: pointer;
+    &:hover {
+      color: rgb(0, 204, 255);
+      // transform: rotate(180deg);
+    }
   }
 }

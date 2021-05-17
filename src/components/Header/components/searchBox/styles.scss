@@ -1,3 +1,40 @@
-.search-box {
-  font-size: 14px;
+.search {
+  width: 200px;
+  height: 32px;
+  background-color: rgba(245, 245, 245, 1);
+  margin-top: 6px;
+  border-radius: 16px;
+  font-size: 12px;
+  font-family: "NhacCuaTui", sans-serif;
+  .form-search {
+    width: 100%;
+    .glass-search-icon {
+      content: "";
+      margin: 0;
+      background: url("https://stc-id.nixcdn.com/v11/images/ic_search.png") no-repeat 11px;
+      background-size: 16px;
+      width: 32px;
+      height: 32px;
+      cursor: pointer;
+      border-radius: 16px 0 0 16px;
+      display: inline-block;
+      -webkit-font-smoothing: antialiased;
+      border: none;
+      outline: none;
+    }
+    input {
+      width: 100%;
+      outline: none;
+      border: 0;
+      box-sizing: none;
+    }
+    :focus {
+      outline: none;
+      border: 0;
+      box-sizing: none;
+    }
+    :hover {
+      color: black;
+    }
+  }
 }

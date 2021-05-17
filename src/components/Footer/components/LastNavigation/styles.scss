@@ -1,0 +1,17 @@
+.last-navigation {
+  width: calc(33.333333% - 48px);
+  margin: 0 48px 0 0;
+  .f-title {
+    width: 100%;
+    font-size: 14px;
+    color: rgba(0, 0, 0, 0.88);
+    font-weight: bold;
+    text-transform: uppercase;
+    line-height: 1.6;
+    padding: 0;
+    margin: 40px 0 8px 0;
+    &.in-col {
+      margin: 15px 0 16px 0;
+    }
+  }
+}

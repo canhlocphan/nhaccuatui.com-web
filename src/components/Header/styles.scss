@@ -1,4 +1,4 @@
-.header {
+.header-wrapper {
   position: fixed;
   z-index: 9999;
   display: flex;
@@ -10,7 +10,7 @@
   padding: 6px 0 7px 0;
   background-color: white;
   border-bottom: #dadada solid 1px;
-  .header-container {
+  .header {
     margin-left: 175px;
     margin-right: 175px;
   }
