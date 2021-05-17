@@ -2,8 +2,8 @@
 import React from "react";
 
 // components
-import AnotherFooter from "../AnotherFooter";
 import CooperationFooter from "../CooperationFooter";
+import AnotherFooter from "../AnotherFooter";
 
 // others
 import "./styles.scss";
