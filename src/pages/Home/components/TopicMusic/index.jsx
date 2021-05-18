@@ -1,18 +1,14 @@
+// libs
 import React from "react";
-
 // components
 import TitleBoxKey from "../../../../components/TitleBoxKey";
 import TopicList from "../TopicList";
-
-// mocks
-import Home from "../../../../mocks/Home";
-
 import "./styles.scss";
 
-const TopMusic = () => (
+const TopMusic = ({ topMusic }) => (
   <div className="top-music-container">
-    <TitleBoxKey>Chủ đề hot</TitleBoxKey>
-    <TopicList home={Home.topMusic}></TopicList>
+    <TitleBoxKey nameTitle="Chủ đề hot" />
+    <TopicList topMusic={topMusic} />
   </div>
 );
 

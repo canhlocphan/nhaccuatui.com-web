@@ -1,26 +1,21 @@
 // libs
 import React, { useState } from "react";
-
 // components
 import TitleBoxKey from "../../../../components/TitleBoxKey";
 import TabSelect from "../TabSelect";
-
-// mocks
-import Home from "../../../../mocks/Home";
 import MVList from "../MVList";
-
 // others
 import "./styles.scss";
 
-const ChartMV = () => {
+const ChartMV = ({ chartMV }) => {
   const [typeMusic, setTypeMusic] = useState(1);
   return (
     <div className="chart-music-container">
-      <TitleBoxKey>BXH MV</TitleBoxKey>
+      <TitleBoxKey nameTitle="BXH MV" />
       <TabSelect typeMusic={typeMusic} setTypeMusic={setTypeMusic}></TabSelect>
-      {typeMusic === 1 && <MVList home={Home.chartMV.bXHMVVN} typeMusic={typeMusic}></MVList>}
-      {typeMusic === 2 && <MVList home={Home.chartMV.bXHMVUS} typeMusic={typeMusic}></MVList>}
-      {typeMusic === 3 && <MVList home={Home.chartMV.bXHMVK} typeMusic={typeMusic}></MVList>}
+      {typeMusic === 1 && <MVList home={chartMV.bXHMVVN} typeMusic={typeMusic} />}
+      {typeMusic === 2 && <MVList home={chartMV.bXHMVUS} typeMusic={typeMusic} />}
+      {typeMusic === 3 && <MVList home={chartMV.bXHMVK} typeMusic={typeMusic} />}
     </div>
   );
 };

@@ -1,26 +1,21 @@
 // libs
 import React, { useState } from "react";
-
 // components
 import TitleBoxKey from "../../../../components/TitleBoxKey";
 import TabSelect from "../TabSelect";
 import MusicList from "../MusicList";
-
-// mocks
-import Home from "../../../../mocks/Home";
-
 // others
 import "./styles.scss";
 
-const ChartMusic = () => {
+const ChartMusic = ({ chartMusic }) => {
   const [typeMusic, setTypeMusic] = useState(1);
   return (
     <div className="chart-music-container">
-      <TitleBoxKey>BXH Bài Hát</TitleBoxKey>
+      <TitleBoxKey nameTitle="BXH Bài Hát" />
       <TabSelect typeMusic={typeMusic} setTypeMusic={setTypeMusic}></TabSelect>
-      {typeMusic === 1 && <MusicList home={Home.chartMusic.musicVietNam} typeMusic={typeMusic}></MusicList>}
-      {typeMusic === 2 && <MusicList home={Home.chartMusic.musicUS} typeMusic={typeMusic}></MusicList>}
-      {typeMusic === 3 && <MusicList home={Home.chartMusic.musicK} typeMusic={typeMusic}></MusicList>}
+      {typeMusic === 1 && <MusicList chartMusic={chartMusic.musicVietNam} typeMusic={typeMusic} />}
+      {typeMusic === 2 && <MusicList chartMusic={chartMusic.musicUS} typeMusic={typeMusic} />}
+      {typeMusic === 3 && <MusicList chartMusic={chartMusic.musicK} typeMusic={typeMusic} />}
     </div>
   );
 };

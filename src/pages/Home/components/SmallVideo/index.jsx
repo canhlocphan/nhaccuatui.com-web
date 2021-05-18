@@ -1,11 +1,9 @@
 // libs
 import React from "react";
-
 // components
 import SmallBoxAbsolute from "../SmallBoxAbsolute";
 import SongName from "../SongName";
 import NameSingerList from "../NameSingerList";
-
 // others
 import "./styles.scss";
 

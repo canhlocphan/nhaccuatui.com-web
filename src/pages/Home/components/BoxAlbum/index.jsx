@@ -1,18 +1,16 @@
 // libs
 import React from "react";
-
 // components
 import Album from "../Album";
 import SongInformation from "../SongInformation";
-
 // others
 import "./styles.scss";
 
-const AlbumList = (props) => (
-  <li className="box-album" key={props.id} title={props.title}>
-    <Album image={props.image} view={props.view}></Album>
-    <SongInformation songName={props.songName} title={props.title}></SongInformation>
+const BoxAlbum = ({ id, title, view, image, songName }) => (
+  <li className="box-album" key={id} title={title}>
+    <Album image={image} view={view} />
+    <SongInformation songName={songName} title={title}></SongInformation>
   </li>
 );
 
-export default AlbumList;
+export default BoxAlbum;

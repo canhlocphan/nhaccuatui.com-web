@@ -1,45 +1,33 @@
 // libs
 import React, { useEffect, useState } from "react";
-
-// mocks
-import Home from "../../../../mocks/Home";
-
+// components
+import SlideDefaultMainSlide from "../SlideDefaultMainSlide";
+import SlideDefaultOption from "../SlideDefaultOption";
+// others
 import "./styles.scss";
 
-const SlideDefault = () => {
-  const [imageDefault, setImageDefault] = useState(Home.slideDefault[0].large);
+const SlideDefault = ({ slideDefault }) => {
+  const [imageDefault, setImageDefault] = useState(slideDefault[0].large);
   const [id, setId] = useState(1);
   useEffect(() => {
     const time = setInterval(() => {
       if (parseInt(id, 10) === 5) {
         setId(1);
       } else setId(parseInt(id, 10) + 1);
-      setImageDefault(Home.slideDefault[id - 1].large);
+      setImageDefault(slideDefault[id - 1].large);
     }, 7000);
     return () => clearInterval(time);
   });
   return (
-    <div className="slide-default">
-      <div className="slide-default-container">
-        <div className="main-slide" style={{ background: `url(${imageDefault})` }}></div>
-        <div className="option-slide">
-          <ul className="option-slide-container">
-            {Home.slideDefault.map(({ id, small, large, title }) => (
-              <li
-                key={id}
-                className="option-slide-item"
-                title={title}
-                onMouseEnter={() => {
-                  setImageDefault(large);
-                  setId(parseInt(id, 10));
-                }}
-              >
-                <span className={`${imageDefault === large ? "active" : "none"}`}></span>
-                <img src={small} alt="option-slide-item" style={{ cursor: "pointer" }}></img>
-              </li>
-            ))}
-          </ul>
-        </div>
+    <div className="slide-default-wrapper">
+      <div className="slide-default">
+        <SlideDefaultMainSlide imageDefault={imageDefault} />
+        <SlideDefaultOption
+          slideDefault={slideDefault}
+          setId={setId}
+          imageDefault={imageDefault}
+          setImageDefault={setImageDefault}
+        />
       </div>
     </div>
   );

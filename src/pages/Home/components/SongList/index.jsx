@@ -1,18 +1,16 @@
 // libs
 import React from "react";
-
 // components
 import SongItem from "../SongItem";
-
 // others
 import "./styles.scss";
 
-const SongList = (props) => (
+const SongList = ({ listSong }) => (
   <ul className="song-list">
-    {props.home.map(({ id, image, title, view }) => {
+    {listSong.map(({ id, image, title, view }) => {
       const temp = title.split("-");
       const songName = temp[0];
-      return <SongItem songName={songName} id={id} title={title} image={image} view={view}></SongItem>;
+      return <SongItem key={id} songName={songName} id={id} title={title} image={image} view={view} />;
     })}
   </ul>
 );

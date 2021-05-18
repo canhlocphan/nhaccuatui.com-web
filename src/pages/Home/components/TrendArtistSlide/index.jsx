@@ -1,21 +1,20 @@
 // libs
 import React from "react";
-
-// scss
+// others
 import "./styles.scss";
 
-const TrendArtistSlide = (props) => (
+const TrendArtistSlide = ({ trendArtist, imageDefault, setId, setImageDefault, setArtist }) => (
   <ul className="trend-artist-slide">
-    {props.trendArtist.map(({ id, image, artist }) => (
+    {trendArtist.map(({ id, image, artist }) => (
       <div key={id} className="small-image">
         <img
-          className={`${props.imageDefault === image ? "active" : "none"}`}
+          className={`${imageDefault === image ? "active" : "none"}`}
           src={image}
           alt="smallImage"
           onMouseEnter={() => {
-            props.setId(id);
-            props.setImageDefault(image);
-            props.setArtist(artist);
+            setId(id);
+            setImageDefault(image);
+            setArtist(artist);
           }}
         ></img>
       </div>

@@ -1,17 +1,17 @@
 // libs
 import React from "react";
-
-// component footer
-import CopyrightFooter from "./components/CopyrightFooter";
-import UpFooter from "./components/UpFooter";
-
+// components
+import FooterUp from "../FooterUp";
+import FooterCopyright from "../FooterCopyright";
+// mocks
+import FooterSource from "../../mocks/Footer";
 // others
 import "./styles.scss";
 
 const Footer = () => (
   <div className="footer-wrapper">
-    <UpFooter></UpFooter>
-    <CopyrightFooter />
+    <FooterUp footer={FooterSource}></FooterUp>
+    <FooterCopyright />
   </div>
 );
 

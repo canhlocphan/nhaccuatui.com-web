@@ -1,9 +1,7 @@
 // libs
 import React from "react";
-
 // components
 import LargeBoxAbsolute from "../LargeBoxAbsolute";
-
 // others
 import "./styles.scss";
 
@@ -16,7 +14,7 @@ const LargeVideo = (props) => (
       image={props.image}
       view={props.view}
       time={props.time}
-    ></LargeBoxAbsolute>
+    />
   </li>
 );
 

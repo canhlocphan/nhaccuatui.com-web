@@ -1,10 +1,11 @@
+// libs
 import React from "react";
-
+// others
 import "./styles.scss";
 
-const Topic = (props) => (
-  <li className="topic" title={props.title}>
-    <img src={props.image} alt={props.title}></img>
+const Topic = ({ image, title }) => (
+  <li className="topic" title={title}>
+    <img src={image} alt={title}></img>
   </li>
 );
 

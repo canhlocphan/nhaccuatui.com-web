@@ -21,8 +21,8 @@ const SongItem = (props) => {
           setActionSong(false);
         }}
       >
-        <Song songName={props.songName} title={props.title} image={props.image}></Song>
-        <IconListen view={props.view} actionSong={actionSong}></IconListen>
+        <Song songName={props.songName} title={props.title} image={props.image} />
+        <IconListen view={props.view} actionSong={actionSong} />
       </div>
     </li>
   );

@@ -1,0 +1,19 @@
+.option-slide-item {
+  margin: 8px 4px 0 4px;
+  width: 158px;
+  height: 63px;
+  padding: 0 0 5px 0 !important;
+  overflow: hidden;
+  cursor: pointer;
+  .active {
+    position: absolute;
+    border: 4px solid #e74c3c;
+    width: 150px;
+    height: 62px;
+    padding-bottom: 0;
+    background: none;
+  }
+  .none {
+    border: 0;
+  }
+}

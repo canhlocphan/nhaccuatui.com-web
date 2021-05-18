@@ -1,10 +1,8 @@
 // libs
 import React from "react";
-
 // components
 import SmallBox from "../SmallBox";
 import TimeVideo from "../TimeVideo";
-
 // others
 import "./styles.scss";
 

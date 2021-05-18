@@ -1,10 +1,8 @@
 // libs
 import React from "react";
-
 // components
 import BackgroundVideo from "../BackgroundVideo";
 import ViewMV from "../ViewMV";
-
 // others
 import "./styles.scss";
 

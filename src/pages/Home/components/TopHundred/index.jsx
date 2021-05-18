@@ -1,20 +1,15 @@
 // libs
 import React from "react";
-
 // components
 import TopHundredHead from "../TopHundredHead";
 import BoxContentHundred from "../BoxContentHundred";
-
-// mocks
-import Home from "../../../../mocks/Home";
-
 // others
 import "./styles.scss";
 
-const TopHundred = () => (
+const TopHundred = ({ topHundred }) => (
   <div className="top-hundred-container">
-    <TopHundredHead></TopHundredHead>
-    <BoxContentHundred home={Home.topHundred}></BoxContentHundred>
+    <TopHundredHead />
+    <BoxContentHundred home={topHundred} />
     <div className="all">
       <span>Xem tất cả TOP 100</span>
     </div>

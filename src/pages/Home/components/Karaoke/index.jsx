@@ -1,21 +1,16 @@
 // libs
 import React from "react";
-
 // components
 import TitleBoxKey from "../../../../components/TitleBoxKey";
 import SmallVideoList from "../SmallVideoList";
-
-// mocks
-import Home from "../../../../mocks/Home";
-
 // others
 import "./styles.scss";
 
-const Karaoke = () => (
+const Karaoke = ({ karaoke }) => (
   <div className="karaoke">
     <div className="karaoke-container">
-      <TitleBoxKey>Karaoke</TitleBoxKey>
-      <SmallVideoList home={Home.karaoke}></SmallVideoList>
+      <TitleBoxKey nameTitle="Karaoke" />
+      <SmallVideoList home={karaoke} />
     </div>
   </div>
 );

@@ -1,16 +1,14 @@
 // libs
 import React from "react";
-
 // components
 import Topic from "../Topic";
-
 // others
 import "./styles.scss";
 
-const TopicList = (props) => (
+const TopicList = ({ topMusic }) => (
   <ul className="topic-list">
-    {props.home.map(({ id, image, title }) => (
-      <Topic key={id} image={image} title={title}></Topic>
+    {topMusic.map(({ id, image, title }) => (
+      <Topic key={id} image={image} title={title} />
     ))}
   </ul>
 );
