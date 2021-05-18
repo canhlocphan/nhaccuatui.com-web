@@ -1,9 +1,7 @@
 // libs
 import React from "react";
-
 // components
 import HeaderList from "./components/HeaderList";
-
 // others
 import "./styles.scss";
 

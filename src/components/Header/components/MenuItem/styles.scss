@@ -1,0 +1,23 @@
+.menu-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  width: auto;
+  padding: 0;
+  list-style: none;
+  .content-menu-list {
+    width: 120px;
+    padding: 0 0 15px 0;
+    text-align: left;
+    list-style: none;
+  }
+  .title-menu-item {
+    width: 120px;
+    padding: 0 0 20px 0;
+    font-size: 14px;
+    font-weight: bold;
+    color: #111;
+    text-align: left;
+    text-transform: uppercase;
+  }
+}
