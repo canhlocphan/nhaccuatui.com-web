@@ -1,0 +1,22 @@
+.function {
+  width: auto;
+  height: 42px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  .function-listen {
+    width: 30px;
+    height: 22px;
+    padding-bottom: 20px;
+    margin-right: 25px;
+    margin-bottom: 5px;
+  }
+  .function-upload {
+    width: 30px;
+    height: 22px;
+    padding-bottom: 20px;
+    margin-bottom: 5px;
+    margin-right: 15px;
+  }
+}

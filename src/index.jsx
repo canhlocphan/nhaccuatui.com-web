@@ -2,15 +2,15 @@
 import React from "react";
 import ReactDOM from "react-dom";
 import reportWebVitals from "./reportWebVitals";
-import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+import { BrowserRouter as Router, Switch, Route, Redirect } from "react-router-dom";
 
 // pages
 import About from "./pages/About";
 import Home from "./pages/Home";
 
 // components
-import Header from "./components/header";
-import Footer from "./components/footer";
+import Header from "./components/Header";
+import Footer from "./components/Footer";
 
 // others
 import "./index.scss";
@@ -22,6 +22,11 @@ ReactDOM.render(
     <Switch>
       <Route path="/" exact>
         <Home />
+      </Route>
+      <Route path="/nhaccuatui.com-web" exact>
+        <Redirect to="/">
+          <Home />
+        </Redirect>
       </Route>
       <Route path="/about">
         <About />

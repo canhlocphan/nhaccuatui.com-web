@@ -32,7 +32,7 @@ const listeningWhatToday = [
     image:
       "https://firebasestorage.googleapis.com/v0/b/main-page-b5c0f.appspot.com/o/nhaccuatui.com%2FngheGi%2F1620100988545_300.jpg?alt=media&token=f08a1963-ba47-448c-8a04-3d1ac6289257",
     title: "Top 100 Nhạc Trẻ Hay Nhất - V.A",
-    view: "1.995.9815",
+    view: "19.95.9815",
   },
 ];
 

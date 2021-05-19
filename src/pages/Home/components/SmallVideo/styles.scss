@@ -1,0 +1,13 @@
+.video-small {
+  width: 195px;
+  height: auto !important;
+  margin: 0 20 0 0;
+  margin-bottom: 15px;
+  padding: 0;
+  .name-song {
+    -webkit-line-clamp: 1;
+    margin: 5px 0 0 0;
+    font-size: 15px;
+    font-weight: 400;
+  }
+}

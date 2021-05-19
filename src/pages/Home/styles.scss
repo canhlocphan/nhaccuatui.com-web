@@ -1,0 +1,12 @@
+.home {
+  display: grid;
+  grid-template-columns: 145px auto auto 145px;
+  grid-column-gap: 30px;
+  width: 100%;
+  .box-content {
+    grid-column: 1/5;
+  }
+  .box-left-wrapper {
+    grid-column-start: 2;
+  }
+}
