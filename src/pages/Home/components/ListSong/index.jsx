@@ -6,10 +6,10 @@ import SongList from "../SongList";
 // others
 import "./styles.scss";
 
-const ListSong = ({ listSong }) => (
+const ListSong = ({ listSong, nameTitle }) => (
   <div className="list-song-container">
     <div className="list-song">
-      <TitleBoxKey nameTitle="MV HOT" />
+      <TitleBoxKey nameTitle={nameTitle} />
       <SongList listSong={listSong} />
     </div>
   </div>

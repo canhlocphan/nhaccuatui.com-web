@@ -1,26 +1,34 @@
 // libs
-import React from "react";
+import React, { memo, useEffect } from "react";
 // components
 import SlideDefaultOptionItem from "../SlideDefaultOptionItem";
 // others
 import "./styles.scss";
 
-const SlideDefaultOption = ({ slideDefault, setId, imageDefault, setImageDefault }) => (
-  <div className="option-slide-wrapper">
-    <ul className="option-slide">
-      {slideDefault.map(({ id, small, large, title }) => (
-        <SlideDefaultOptionItem
-          id={id}
-          small={small}
-          large={large}
-          title={title}
-          setImageDefault={setImageDefault}
-          setId={setId}
-          imageDefault={imageDefault}
-        />
-      ))}
-    </ul>
-  </div>
-);
+const SlideDefaultOption = ({ id, setId, setImageDefault, slideDefault, imageDefault, handleImageDefault }) => {
+  useEffect(() => {
+    const time = setInterval(() => {
+      if (parseInt(id, 10) === 5) {
+        setId(1);
+      } else setId(parseInt(id, 10) + 1);
+      setImageDefault(slideDefault[id - 1].large);
+    }, 7000);
+    return () => clearInterval(time);
+  }, [id, slideDefault, setId, setImageDefault]);
+  return (
+    <div className="option-slide-wrapper">
+      <ul className="option-slide">
+        {slideDefault.map((item) => (
+          <SlideDefaultOptionItem
+            key={item.id}
+            item={item}
+            handleImageDefault={handleImageDefault}
+            imageDefault={imageDefault}
+          />
+        ))}
+      </ul>
+    </div>
+  );
+};
 
-export default SlideDefaultOption;
+export default memo(SlideDefaultOption);

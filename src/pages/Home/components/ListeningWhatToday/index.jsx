@@ -5,10 +5,10 @@ import ListeningWhatTodayAlbumList from "../ListeningWhatTodayAlbumList";
 // others
 import "./styles.scss";
 
-const ListeningWhatToday = ({ listeningWhatToday }) => (
-  <div className="listening-what-today">
-    <div className="listening-what-today-container">
-      <TitleBoxKey nameTitle="Nghe gì hôm nay" />
+const ListeningWhatToday = ({ listeningWhatToday, nameTitle }) => (
+  <div className="listening-what-today-wrapper">
+    <div className="listening-what-today">
+      <TitleBoxKey nameTitle={nameTitle} />
       <ListeningWhatTodayAlbumList listeningWhatToday={listeningWhatToday} />
     </div>
   </div>

@@ -6,10 +6,10 @@ import AlbumHotAlbumList from "../AlbumHotAlbumList";
 // others
 import "./styles.scss";
 
-const AlbumHot = ({ albumHot }) => (
+const AlbumHot = ({ albumHot, nameTitle }) => (
   <div className="album-hot">
     <div className="album-hot-container">
-      <TitleBoxKey nameTitle="Mới phát hành" />
+      <TitleBoxKey nameTitle={nameTitle} />
       <AlbumHotAlbumList albumHot={albumHot} />
     </div>
   </div>

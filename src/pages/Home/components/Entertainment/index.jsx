@@ -6,10 +6,10 @@ import SmallVideoList from "../SmallVideoList";
 // others
 import "./styles.scss";
 
-const Entertainment = ({ entertainment }) => (
+const Entertainment = ({ entertainment, nameTitle }) => (
   <div className="entertainment">
     <div className="entertainment-container">
-      <TitleBoxKey nameTitle="Giải trí" />
+      <TitleBoxKey nameTitle={nameTitle} />
       <SmallVideoList home={entertainment} />
     </div>
   </div>
