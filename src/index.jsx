@@ -2,40 +2,13 @@
 import React from "react";
 import ReactDOM from "react-dom";
 import reportWebVitals from "./reportWebVitals";
-import { BrowserRouter as Router, Switch, Route, Redirect } from "react-router-dom";
-
-// pages
-import About from "./pages/About";
-import Home from "./pages/Home";
-
 // components
-import Header from "./components/Header";
-import Footer from "./components/Footer";
-
+import App from "./App";
 // others
 import "./index.scss";
 import "antd/dist/antd.css";
 
-ReactDOM.render(
-  <Router>
-    <Header />
-    <Switch>
-      <Route path="/" exact>
-        <Home />
-      </Route>
-      <Route path="/nhaccuatui.com-web" exact>
-        <Redirect to="/">
-          <Home />
-        </Redirect>
-      </Route>
-      <Route path="/about">
-        <About />
-      </Route>
-    </Switch>
-    <Footer />
-  </Router>,
-  document.getElementById("root")
-);
+ReactDOM.render(<App />, document.getElementById("root"));
 
 // If you want to start measuring performance in your app, pass a function
 // to log results (for example: reportWebVitals(console.log))

@@ -3,17 +3,11 @@ import React from "react";
 // others
 import "./styles.scss";
 
-const FooterButtonNextCarousel = ({ startId, setStartId, stopId, setStopId }) => (
+const FooterButtonNextCarousel = ({ next }) => (
   <div
     className="btn-next"
     onClick={() => {
-      if (startId === 9) {
-        setStartId(0);
-        setStopId(6);
-      } else {
-        setStartId(startId + 1);
-        setStopId(stopId + 1);
-      }
+      next();
     }}
   ></div>
 );

@@ -1,4 +1,4 @@
-import slideDefault from "./slideDefaultI";
+import slideDefault from "./slideDefault";
 import listeningWhatToday from "./listeningWhatToday";
 import albumHot from "./albumHot";
 import mvHot from "./mvHot";

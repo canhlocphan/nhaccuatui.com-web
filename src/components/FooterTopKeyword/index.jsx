@@ -6,7 +6,7 @@ import "./styles.scss";
 const FooterTopKeyword = ({ topKeyword }) => (
   <ul className="top-keyword">
     {topKeyword.map(({ id, title }) => (
-      <span className="keyword" title={title} keyword={id}>
+      <span className="keyword" title={title} keyword={id} key={id}>
         {title}
       </span>
     ))}

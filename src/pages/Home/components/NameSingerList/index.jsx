@@ -11,17 +11,21 @@ const NameSingerList = (props) => {
       {nameSingerList.map((value) => {
         if (value === nameSingerList[nameSingerList.length - 1])
           return (
-            <h4 className="name-singer" title={`Tìm các bài hát, playlist, mv do ca sĩ ${value} trình bày`}>
+            <h4
+              className="name-singer"
+              title={`Tìm các bài hát, playlist, mv do ca sĩ ${value} trình bày`}
+              key={Math.random()}
+            >
               {`${value}`}
             </h4>
           );
         return (
-          <>
+          <React.Fragment key={Math.random()}>
             <h4 className="name-singer" title={`Tìm các bài hát, playlist, mv do ca sĩ ${value} trình bày`}>
               {`${value}`}
             </h4>
             <span className="space">,</span>
-          </>
+          </React.Fragment>
         );
       })}
     </div>
