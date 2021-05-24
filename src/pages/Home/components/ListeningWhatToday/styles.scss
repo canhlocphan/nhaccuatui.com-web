@@ -1,0 +1,13 @@
+.listening-what-today-wrapper {
+  margin-bottom: 10px;
+  width: 100%;
+  .listening-what-today {
+    width: 100%;
+    overflow: hidden;
+  }
+  .btn-control-page-wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+  }
+}

@@ -1,0 +1,13 @@
+.download-list {
+  width: 100%;
+  padding: 0;
+  list-style: none;
+  .download {
+    width: 100%;
+    margin: 0 6px 0 0;
+    img {
+      width: 108px;
+      height: 32px;
+    }
+  }
+}

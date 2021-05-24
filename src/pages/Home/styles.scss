@@ -1,0 +1,12 @@
+.home-wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 100%;
+  .home {
+    display: flex;
+    flex-direction: row;
+    margin-top: 80px !important;
+    width: 1170px;
+  }
+}

@@ -1,0 +1,26 @@
+.search {
+  width: 200px;
+  height: 32px;
+  background-color: rgba(245, 245, 245, 1);
+  margin-top: 6px;
+  border-radius: 16px;
+  font-size: 12px;
+  font-family: "NhacCuaTui", sans-serif;
+  .form-search {
+    width: 100%;
+    input {
+      width: 100%;
+      outline: none;
+      border: 0;
+      box-sizing: none;
+    }
+    :focus {
+      outline: none;
+      border: 0;
+      box-sizing: none;
+    }
+    :hover {
+      color: black;
+    }
+  }
+}

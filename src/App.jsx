@@ -1,13 +1,31 @@
+// libs
 import React from "react";
-import "./App.css";
-import Home from "./pages/home";
+import { BrowserRouter as Router, Switch, Route, Redirect } from "react-router-dom";
+import { Provider } from "react-redux";
+// store
+import store from "./store";
+// components
+import Header from "./components/Header";
+import Footer from "./components/Footer";
+// routers
+import routes from "./routers/appRouter";
+import LanguageProvider from "./context";
 
-function App() {
-  return (
-    <div className="App">
-      <Home />
-    </div>
-  );
-}
+const App = () => (
+  <Provider store={store}>
+    <LanguageProvider>
+      <Router>
+        <Header />
+        <Switch>
+          <Redirect from="/nhaccuatui.com-web" to="/" exact />
+          {routes.map(({ id, path, component }) => (
+            <Route key={id} path={path} component={component} exact></Route>
+          ))}
+        </Switch>
+        <Footer />
+      </Router>
+    </LanguageProvider>
+  </Provider>
+);
 
 export default App;

@@ -1,11 +1,12 @@
+// libs
 import React from "react";
-
+// others
 import "./styles.scss";
 
-const TitleBoxKey = (props) => (
+const TitleBoxKey = ({ nameTitle }) => (
   <h2 className="title-box-key">
-    <div className="title" title={props.children}>
-      {props.children}
+    <div className="title" title={nameTitle}>
+      {nameTitle}
     </div>
   </h2>
 );
