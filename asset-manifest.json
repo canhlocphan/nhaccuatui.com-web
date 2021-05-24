@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/nhaccuatui.com-web/static/css/main.d840980c.chunk.css",
-    "main.js": "/nhaccuatui.com-web/static/js/main.8cbc5c83.chunk.js",
-    "main.js.map": "/nhaccuatui.com-web/static/js/main.8cbc5c83.chunk.js.map",
+    "main.js": "/nhaccuatui.com-web/static/js/main.918a1f91.chunk.js",
+    "main.js.map": "/nhaccuatui.com-web/static/js/main.918a1f91.chunk.js.map",
     "runtime-main.js": "/nhaccuatui.com-web/static/js/runtime-main.73aa2621.js",
     "runtime-main.js.map": "/nhaccuatui.com-web/static/js/runtime-main.73aa2621.js.map",
     "static/css/2.54787924.chunk.css": "/nhaccuatui.com-web/static/css/2.54787924.chunk.css",
@@ -20,6 +20,6 @@
     "static/css/2.54787924.chunk.css",
     "static/js/2.07cbd6f6.chunk.js",
     "static/css/main.d840980c.chunk.css",
-    "static/js/main.8cbc5c83.chunk.js"
+    "static/js/main.918a1f91.chunk.js"
   ]
 }
