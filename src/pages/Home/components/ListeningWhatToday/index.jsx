@@ -9,7 +9,7 @@ import usePressKey from "../../../../hooks/usePressKey";
 // others
 import "./styles.scss";
 
-const ListeningWhatToday = ({ listeningWhatToday, nameTitle, page, setPage }) => {
+const ListeningWhatToday = ({ listeningWhatToday, nameTitle, page, setPage, totalPages }) => {
   const [isHover, setIsHover] = useState(false);
   const handleMouseEnter = () => {
     setIsHover(true);
@@ -17,7 +17,7 @@ const ListeningWhatToday = ({ listeningWhatToday, nameTitle, page, setPage }) =>
   const handleMouseLeave = () => {
     setIsHover(false);
   };
-  const currentPage = usePressKey(page, setPage, isHover);
+  const currentPage = usePressKey(page, setPage, totalPages, isHover);
   useEffect(() => {
     if (isHover) {
       setPage(currentPage);
@@ -28,7 +28,7 @@ const ListeningWhatToday = ({ listeningWhatToday, nameTitle, page, setPage }) =>
       <div className="listening-what-today">
         <TitleBoxKey nameTitle={nameTitle} />
         <ListeningWhatTodayAlbumList listeningWhatToday={listeningWhatToday} />
-        <PaginationWrapper page={page} setPage={setPage} />
+        <PaginationWrapper page={page} setPage={setPage} totalPages={totalPages} />
       </div>
     </div>
   );

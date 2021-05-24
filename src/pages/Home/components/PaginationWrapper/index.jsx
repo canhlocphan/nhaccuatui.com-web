@@ -5,9 +5,9 @@ import Pagination from "../Pagination";
 // others
 import "./styles.scss";
 
-const PaginationWrapper = ({ page, setPage }) => (
+const PaginationWrapper = ({ page, setPage, totalPages }) => (
   <div className="btn-control-page-wrapper">
-    <Pagination page={page} setPage={setPage} />
+    <Pagination page={page} setPage={setPage} totalPages={totalPages} />
   </div>
 );
 

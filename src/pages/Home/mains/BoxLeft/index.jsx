@@ -21,6 +21,7 @@ const BoxLeft = ({ Home, defaultLanguage }) => {
     _limit: 5,
     _page: page,
   };
+  const totalPages = 3;
   const paramsString = queryString.stringify(filters);
   const dispatch = useDispatch();
   useEffect(() => {
@@ -41,6 +42,7 @@ const BoxLeft = ({ Home, defaultLanguage }) => {
           listeningWhatToday={listeningWhatToday}
           page={page}
           setPage={setPage}
+          totalPages={totalPages}
           nameTitle={defaultLanguage.listeningWhatToday}
         />
       )}

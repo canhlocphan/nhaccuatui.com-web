@@ -1,9 +1,10 @@
 // libs
-import { useCallback, useEffect } from "react";
+import { useCallback, useEffect, useRef } from "react";
 // keyCode
 import keyCode from "../constants/keyCode";
 
-export default function usePressKey(page, setPage, isHover) {
+export default function usePressKey(page, setPage, totalPages, isHover) {
+  const currentPage = useRef(null);
   const handlePage = useCallback(
     (e) => {
       if (e.keyCode === keyCode.ARROW_DOWN || e.keyCode === keyCode.PAGE_DOWN) {
@@ -11,17 +12,23 @@ export default function usePressKey(page, setPage, isHover) {
         if (page === 1) {
           return page;
         }
-        setPage(page - 1);
+        if (currentPage.current) {
+          clearTimeout(currentPage.current);
+        }
+        currentPage.current = setTimeout(() => setPage(page - 1), 500);
       } else if (e.keyCode === keyCode.ARROW_UP || e.keyCode === keyCode.PAGE_UP) {
         e.preventDefault();
-        if (page === 3) {
+        if (page === totalPages) {
           return page;
         }
-        setPage(page + 1);
+        if (currentPage.current) {
+          clearTimeout(currentPage.current);
+        }
+        currentPage.current = setTimeout(() => setPage(page + 1), 500);
       }
       return page;
     },
-    [page, setPage]
+    [page, setPage, totalPages]
   );
   useEffect(() => {
     if (isHover) {
