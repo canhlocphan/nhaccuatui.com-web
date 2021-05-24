@@ -7,11 +7,11 @@ import MVList from "../MVList";
 // others
 import "./styles.scss";
 
-const ChartMV = ({ chartMV }) => {
+const ChartMV = ({ chartMV, nameTitle }) => {
   const [typeMusic, setTypeMusic] = useState(1);
   return (
     <div className="chart-music-container">
-      <TitleBoxKey nameTitle="BXH MV" />
+      <TitleBoxKey nameTitle={nameTitle} />
       <TabSelect typeMusic={typeMusic} setTypeMusic={setTypeMusic}></TabSelect>
       {typeMusic === 1 && <MVList home={chartMV.bXHMVVN} typeMusic={typeMusic} />}
       {typeMusic === 2 && <MVList home={chartMV.bXHMVUS} typeMusic={typeMusic} />}

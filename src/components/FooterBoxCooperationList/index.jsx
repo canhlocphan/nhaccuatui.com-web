@@ -1,5 +1,5 @@
 // libs
-import React, { useEffect, useState } from "react";
+import React, { memo, useEffect, useState } from "react";
 // components
 import FooterCooperationList from "../FooterCooperationList";
 import FooterButtonPreCarousel from "../FooterButtonPreCarousel";
@@ -34,43 +34,8 @@ const FooterBoxCooperationList = ({ footer }) => {
     }, 3000);
     return () => clearInterval(time);
   });
-  const [on, setOn] = useState(false);
-  useEffect(() => {
-    const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
-    const scrollLeft = window.pageXOffset || document.documentElement.scrollLeft;
-    if (on === true) {
-      window.addEventListener("keydown", (e) => {
-        if (e.key === "ArrowUp") {
-          window.addEventListener("scroll", () => {
-            window.scrollTo(scrollLeft, scrollTop);
-          });
-          next();
-        } else if (e.key === "ArrowDown") {
-          window.addEventListener("scroll", () => {
-            window.scrollTo(scrollLeft, scrollTop);
-          });
-          prev();
-        } else
-          window.removeEventListener("scroll", () => {
-            window.scrollTo(scrollLeft, scrollTop);
-          });
-      });
-    } else {
-      window.removeEventListener("scroll", () => {
-        window.scrollTo(scrollLeft, scrollTop);
-      });
-    }
-  });
   return (
-    <div
-      className="footer-cooperation-list-wrapper"
-      onMouseEnter={() => {
-        setOn(true);
-      }}
-      onMouseLeave={() => {
-        setOn(false);
-      }}
-    >
+    <div className="footer-cooperation-list-wrapper">
       <FooterCooperationList footer={footer.cooperationList} startId={startId} stopId={stopId}></FooterCooperationList>
       <FooterButtonPreCarousel prev={prev} />
       <FooterButtonNextCarousel next={next} />
@@ -78,4 +43,4 @@ const FooterBoxCooperationList = ({ footer }) => {
   );
 };
 
-export default FooterBoxCooperationList;
+export default memo(FooterBoxCooperationList);

@@ -5,7 +5,7 @@ import SlideDefaultOptionItem from "../SlideDefaultOptionItem";
 // others
 import "./styles.scss";
 
-const SlideDefaultOption = ({ id, setId, setImageDefault, slideDefault, imageDefault, handleImageDefault }) => {
+const SlideDefaultOption = ({ id, setId, imageDefault, setImageDefault, slideDefault, handleImageDefault }) => {
   useEffect(() => {
     const time = setInterval(() => {
       if (parseInt(id, 10) === 5) {

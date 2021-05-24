@@ -5,9 +5,9 @@ import TitleBoxKey from "../../../../components/TitleBoxKey";
 import TopicList from "../TopicList";
 import "./styles.scss";
 
-const TopMusic = ({ topMusic }) => (
+const TopMusic = ({ topMusic, nameTitle }) => (
   <div className="top-music-container">
-    <TitleBoxKey nameTitle="Chủ đề hot" />
+    <TitleBoxKey nameTitle={nameTitle} />
     <TopicList topMusic={topMusic} />
   </div>
 );

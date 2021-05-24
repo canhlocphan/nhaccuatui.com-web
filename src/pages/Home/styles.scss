@@ -1,12 +1,12 @@
-.home {
-  display: grid;
-  grid-template-columns: 145px auto auto 145px;
-  grid-column-gap: 30px;
+.home-wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
   width: 100%;
-  .box-content {
-    grid-column: 1/5;
-  }
-  .box-left-wrapper {
-    grid-column-start: 2;
+  .home {
+    display: flex;
+    flex-direction: row;
+    margin-top: 80px !important;
+    width: 1170px;
   }
 }
