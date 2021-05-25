@@ -1,30 +1,25 @@
 // libs
-import React, { useEffect, useState } from "react";
+import React, { useEffect } from "react";
 // components
 import TitleBoxKey from "../../../../components/TitleBoxKey";
 import ListeningWhatTodayAlbumList from "../ListeningWhatTodayAlbumList";
 import PaginationWrapper from "../PaginationWrapper";
 // hooks
-import usePressKey from "../../../../hooks/usePressKey";
+import usePaginationKey from "../../../../hooks/usePaginationKey";
+import useHover from "../../../../hooks/useHover";
 // others
 import "./styles.scss";
 
 const ListeningWhatToday = ({ listeningWhatToday, nameTitle, page, setPage, totalPages }) => {
-  const [isHover, setIsHover] = useState(false);
-  const handleMouseEnter = () => {
-    setIsHover(true);
-  };
-  const handleMouseLeave = () => {
-    setIsHover(false);
-  };
-  const currentPage = usePressKey(page, setPage, totalPages, isHover);
+  const [hoverRef, isHovered] = useHover();
+  const currentPage = usePaginationKey(page, setPage, totalPages, isHovered);
   useEffect(() => {
-    if (isHover) {
+    if (isHovered) {
       setPage(currentPage);
     }
-  }, [isHover, currentPage, setPage]);
+  }, [isHovered, currentPage, setPage]);
   return (
-    <div className="listening-what-today-wrapper" onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}>
+    <div className="listening-what-today-wrapper" ref={hoverRef}>
       <div className="listening-what-today">
         <TitleBoxKey nameTitle={nameTitle} />
         <ListeningWhatTodayAlbumList listeningWhatToday={listeningWhatToday} />
