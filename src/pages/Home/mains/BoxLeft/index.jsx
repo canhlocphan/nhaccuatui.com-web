@@ -2,7 +2,7 @@
 import React, { useEffect, useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import queryString from "query-string";
-// compoents
+// components
 import SlideDefault from "../../components/SlideDefault";
 import ListeningWhatToday from "../../components/ListeningWhatToday";
 import AlbumHot from "../../components/AlbumHot";
@@ -16,10 +16,12 @@ import { loadSlideDefault, loadListeningWhatToday } from "../../../../redux/acti
 import "./styles.scss";
 
 const BoxLeft = ({ Home, defaultLanguage }) => {
-  const [filters, setFilters] = useState({
+  const [page, setPage] = useState(1);
+  const filters = {
     _limit: 5,
-    _page: 1,
-  });
+    _page: page,
+  };
+  const totalPages = 3;
   const paramsString = queryString.stringify(filters);
   const dispatch = useDispatch();
   useEffect(() => {
@@ -38,7 +40,9 @@ const BoxLeft = ({ Home, defaultLanguage }) => {
       {isLoading && (
         <ListeningWhatToday
           listeningWhatToday={listeningWhatToday}
-          setFilters={setFilters}
+          page={page}
+          setPage={setPage}
+          totalPages={totalPages}
           nameTitle={defaultLanguage.listeningWhatToday}
         />
       )}

@@ -1,7 +1,6 @@
 // libs
 import React, { useContext } from "react";
 // components
-import BoxContent from "./mains/BoxContent";
 import BoxLeft from "./mains/BoxLeft";
 import BoxRight from "./mains/BoxRight";
 // mocks
@@ -13,10 +12,11 @@ import { LanguageContext } from "../../context";
 const Home = () => {
   const { defaultLanguage } = useContext(LanguageContext);
   return (
-    <div className="home">
-      <BoxContent />
-      <BoxLeft Home={HomeData} defaultLanguage={defaultLanguage} />
-      <BoxRight Home={HomeData} defaultLanguage={defaultLanguage} />
+    <div className="home-wrapper">
+      <div className="home">
+        <BoxLeft Home={HomeData} defaultLanguage={defaultLanguage} />
+        <BoxRight Home={HomeData} defaultLanguage={defaultLanguage} />
+      </div>
     </div>
   );
 };

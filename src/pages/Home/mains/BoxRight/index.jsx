@@ -10,13 +10,13 @@ import TopHundred from "../../components/TopHundred";
 // others
 import "./styles.scss";
 
-const BoxRight = ({ Home }) => (
+const BoxRight = ({ Home, defaultLanguage }) => (
   <div className="box-right-wrapper">
     <TrendArtist trendArtist={Home.trendArtist} />
     <DiscoveryPlayList />
-    <TocpicMusic topMusic={Home.topMusic} />
-    <ChartMusic chartMusic={Home.chartMusic} />
-    <ChartMV chartMV={Home.chartMV} />
+    <TocpicMusic topMusic={Home.topMusic} nameTitle={defaultLanguage.topicHot} />
+    <ChartMusic chartMusic={Home.chartMusic} nameTitle={defaultLanguage.chartSong} />
+    <ChartMV chartMV={Home.chartMV} nameTitle={defaultLanguage.chartMV} />
     <TopHundred topHundred={Home.topHundred} />
   </div>
 );
