@@ -1,25 +1,25 @@
 {
   "files": {
-    "main.css": "/nhaccuatui.com-web/static/css/main.d840980c.chunk.css",
-    "main.js": "/nhaccuatui.com-web/static/js/main.918a1f91.chunk.js",
-    "main.js.map": "/nhaccuatui.com-web/static/js/main.918a1f91.chunk.js.map",
-    "runtime-main.js": "/nhaccuatui.com-web/static/js/runtime-main.73aa2621.js",
-    "runtime-main.js.map": "/nhaccuatui.com-web/static/js/runtime-main.73aa2621.js.map",
+    "main.css": "/nhaccuatui.com-web/static/css/main.b88c7cc9.chunk.css",
+    "main.js": "/nhaccuatui.com-web/static/js/main.21f0a3f0.chunk.js",
+    "main.js.map": "/nhaccuatui.com-web/static/js/main.21f0a3f0.chunk.js.map",
+    "runtime-main.js": "/nhaccuatui.com-web/static/js/runtime-main.8d7cb830.js",
+    "runtime-main.js.map": "/nhaccuatui.com-web/static/js/runtime-main.8d7cb830.js.map",
     "static/css/2.54787924.chunk.css": "/nhaccuatui.com-web/static/css/2.54787924.chunk.css",
-    "static/js/2.07cbd6f6.chunk.js": "/nhaccuatui.com-web/static/js/2.07cbd6f6.chunk.js",
-    "static/js/2.07cbd6f6.chunk.js.map": "/nhaccuatui.com-web/static/js/2.07cbd6f6.chunk.js.map",
-    "static/js/3.cb90762c.chunk.js": "/nhaccuatui.com-web/static/js/3.cb90762c.chunk.js",
-    "static/js/3.cb90762c.chunk.js.map": "/nhaccuatui.com-web/static/js/3.cb90762c.chunk.js.map",
+    "static/js/2.2f88aad1.chunk.js": "/nhaccuatui.com-web/static/js/2.2f88aad1.chunk.js",
+    "static/js/2.2f88aad1.chunk.js.map": "/nhaccuatui.com-web/static/js/2.2f88aad1.chunk.js.map",
+    "static/js/3.6d2f8c04.chunk.js": "/nhaccuatui.com-web/static/js/3.6d2f8c04.chunk.js",
+    "static/js/3.6d2f8c04.chunk.js.map": "/nhaccuatui.com-web/static/js/3.6d2f8c04.chunk.js.map",
     "index.html": "/nhaccuatui.com-web/index.html",
     "static/css/2.54787924.chunk.css.map": "/nhaccuatui.com-web/static/css/2.54787924.chunk.css.map",
-    "static/css/main.d840980c.chunk.css.map": "/nhaccuatui.com-web/static/css/main.d840980c.chunk.css.map",
-    "static/js/2.07cbd6f6.chunk.js.LICENSE.txt": "/nhaccuatui.com-web/static/js/2.07cbd6f6.chunk.js.LICENSE.txt"
+    "static/css/main.b88c7cc9.chunk.css.map": "/nhaccuatui.com-web/static/css/main.b88c7cc9.chunk.css.map",
+    "static/js/2.2f88aad1.chunk.js.LICENSE.txt": "/nhaccuatui.com-web/static/js/2.2f88aad1.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
-    "static/js/runtime-main.73aa2621.js",
+    "static/js/runtime-main.8d7cb830.js",
     "static/css/2.54787924.chunk.css",
-    "static/js/2.07cbd6f6.chunk.js",
-    "static/css/main.d840980c.chunk.css",
-    "static/js/main.918a1f91.chunk.js"
+    "static/js/2.2f88aad1.chunk.js",
+    "static/css/main.b88c7cc9.chunk.css",
+    "static/js/main.21f0a3f0.chunk.js"
   ]
 }
