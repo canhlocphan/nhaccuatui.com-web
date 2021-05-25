@@ -10,7 +10,7 @@ export default function usePaginationKey(page, setPage, totalPages, isHover) {
   const handlePage = useCallback(
     (e) => {
       switch (e.keyCode) {
-        case keyCode.ARROW_DOWN || keyCode.PAGE_DOWN: {
+        case keyCode.PAGE_DOWN: {
           e.preventDefault();
           if (page === 1) {
             return page;
@@ -21,7 +21,7 @@ export default function usePaginationKey(page, setPage, totalPages, isHover) {
           currentPage.current = setTimeout(() => setPage(page - 1), 500);
           break;
         }
-        case keyCode.ARROW_UP || keyCode.PAGE_UP: {
+        case keyCode.PAGE_UP: {
           e.preventDefault();
           if (page === totalPages) {
             return page;
