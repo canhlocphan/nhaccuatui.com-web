@@ -3,8 +3,8 @@ import HOME_ACTION_TYPE from "../../../constants/actionType/Home";
 // https
 import HomeServices from "../../../https/Home";
 
-export const getActionSlideDefault = (data) => ({
-  type: HOME_ACTION_TYPE.SLIDE_DEFAULT_SUCCESS,
+export const getActionAlbumHot = (data) => ({
+  type: HOME_ACTION_TYPE.ALBUM_HOT_SUCCESS,
   payload: { data },
 });
 
@@ -13,11 +13,11 @@ export const getActionListeningWhatToday = (data) => ({
   payload: { data },
 });
 
-export const loadSlideDefault = () => async (dispatch) => {
+export const loadAlbumHot = (param) => async (dispatch) => {
   try {
-    const respone = await HomeServices.getSlideDefault();
+    const respone = await HomeServices.getAlbumHot(param);
     const { data } = respone;
-    dispatch(getActionSlideDefault(data));
+    dispatch(getActionAlbumHot(data));
   } catch (err) {
     // console.log(err);
   }

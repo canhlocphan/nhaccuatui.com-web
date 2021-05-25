@@ -11,42 +11,56 @@ import ListSong from "../../components/ListSong";
 import Karaoke from "../../components/Karaoke";
 import Entertainment from "../../components/Entertainment";
 // actions
-import { loadSlideDefault, loadListeningWhatToday } from "../../../../redux/action/Home";
+import { loadListeningWhatToday, loadAlbumHot } from "../../../../redux/action/Home";
 // others
 import "./styles.scss";
 
 const BoxLeft = ({ Home, defaultLanguage }) => {
-  const [page, setPage] = useState(1);
-  const filters = {
+  const [pageListen, setPageListen] = useState(1);
+  const [pageAlbum, setPageAlbum] = useState(1);
+  const filtersListen = {
     _limit: 5,
-    _page: page,
+    _page: pageListen,
+  };
+  const filtersAlbum = {
+    _limit: 10,
+    _page: pageAlbum,
   };
   const totalPages = 3;
-  const paramsString = queryString.stringify(filters);
+  const paramsStringListen = queryString.stringify(filtersListen);
+  const paramsStringAlbum = queryString.stringify(filtersAlbum);
   const dispatch = useDispatch();
   useEffect(() => {
-    dispatch(loadSlideDefault());
-  }, [dispatch]);
+    dispatch(loadListeningWhatToday(paramsStringListen));
+  }, [dispatch, paramsStringListen]);
   useEffect(() => {
-    dispatch(loadListeningWhatToday(paramsString));
-  }, [dispatch, paramsString]);
-  const slideDefault = useSelector((state) => state.Home.slide);
-  const loading = useSelector((state) => state.Home.loading);
+    dispatch(loadAlbumHot(paramsStringAlbum));
+  }, [dispatch, paramsStringAlbum]);
   const listeningWhatToday = useSelector((state) => state.Home.listen);
   const isLoading = useSelector((state) => state.Home.isLoading);
+  const albumHot = useSelector((state) => state.Home.album);
+  const loading = useSelector((state) => state.Home.loading);
   return (
     <div className="box-left-wrapper">
-      {loading && <SlideDefault slideDefault={slideDefault} />}
+      <SlideDefault slideDefault={Home.slideDefault} />
       {isLoading && (
         <ListeningWhatToday
           listeningWhatToday={listeningWhatToday}
-          page={page}
-          setPage={setPage}
+          page={pageListen}
+          setPage={setPageListen}
           totalPages={totalPages}
           nameTitle={defaultLanguage.listeningWhatToday}
         />
       )}
-      <AlbumHot albumHot={Home.albumHot} nameTitle={defaultLanguage.albumHot} />
+      {loading && (
+        <AlbumHot
+          albumHot={albumHot}
+          nameTitle={defaultLanguage.albumHot}
+          page={pageAlbum}
+          setPage={setPageAlbum}
+          totalPages={totalPages}
+        />
+      )}
       <MvHot mvHot={Home.mvHot} nameTitle={defaultLanguage.mvHot} />
       <ListSong listSong={Home.song} nameTitle={defaultLanguage.listSong} />
       <Karaoke karaoke={Home.karaoke} nameTitle={defaultLanguage.karaoke} />

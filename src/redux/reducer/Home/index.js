@@ -4,17 +4,17 @@ import HOME_ACTION_TYPE from "../../../constants/actionType/Home";
 const initialState = {
   loading: false,
   isLoading: false,
-  slide: [],
+  album: [],
   listen: [],
 };
 
 const HomeReducer = (state = initialState, action) => {
   switch (action.type) {
-    case HOME_ACTION_TYPE.SLIDE_DEFAULT_SUCCESS:
+    case HOME_ACTION_TYPE.ALBUM_HOT_SUCCESS:
       return {
         ...state,
         loading: true,
-        slide: action.payload.data,
+        album: action.payload.data,
       };
     case HOME_ACTION_TYPE.LISTENING_WHAT_TODAY_SUCCESS:
       return {
