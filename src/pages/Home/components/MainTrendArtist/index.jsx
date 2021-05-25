@@ -1,17 +1,15 @@
 // libs
 import React from "react";
+// components
+import MainArtistSlide from "../MainArtistSlide";
+import MainArtitsInfo from "../MainArtistInfo";
 // others
 import "./styles.scss";
 
-const MainTrendArtist = (props) => (
+const MainTrendArtist = ({ image, artist }) => (
   <div className="main-trend-artist">
-    <div className="main-artist-slide">
-      <img className="image" src={props.image} alt="artist"></img>
-    </div>
-    <div className="main-artist-info">
-      <div className="title">Top Nghệ Sĩ Trending Trong Tuần</div>
-      <div className="artist-name">{props.artist}</div>
-    </div>
+    <MainArtistSlide image={image} />
+    <MainArtitsInfo artist={artist} />
   </div>
 );
 

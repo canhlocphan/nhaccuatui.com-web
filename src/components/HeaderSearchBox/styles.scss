@@ -1,26 +1,26 @@
 .search {
-  width: 200px;
-  height: 32px;
-  background-color: rgba(245, 245, 245, 1);
   margin-top: 6px;
   border-radius: 16px;
+  background-color: #fff3e1;
+  width: 200px;
+  height: 32px;
   font-size: 12px;
   font-family: "NhacCuaTui", sans-serif;
   .form-search {
     width: 100%;
     input {
+      box-sizing: none;
       width: 100%;
       outline: none;
       border: 0;
-      box-sizing: none;
     }
     :focus {
+      box-sizing: none;
       outline: none;
       border: 0;
-      box-sizing: none;
     }
     :hover {
-      color: black;
+      color: #111;
     }
   }
 }

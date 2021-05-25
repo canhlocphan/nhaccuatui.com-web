@@ -7,7 +7,7 @@ import SongList from "../SongList";
 import "./styles.scss";
 
 const ListSong = ({ listSong, nameTitle }) => (
-  <div className="list-song-container">
+  <div className="list-song-wrapper">
     <div className="list-song">
       <TitleBoxKey nameTitle={nameTitle} />
       <SongList listSong={listSong} />

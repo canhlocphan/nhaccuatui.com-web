@@ -2,22 +2,22 @@
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
-  width: auto;
   padding: 0;
+  width: auto;
   list-style: none;
   .content-menu-list {
-    width: 120px;
     padding: 0 0 15px 0;
-    text-align: left;
+    width: 120px;
     list-style: none;
+    text-align: left;
   }
   .title-menu-item {
-    width: 120px;
     padding: 0 0 20px 0;
-    font-size: 14px;
-    font-weight: bold;
-    color: #111;
+    width: 120px;
     text-align: left;
     text-transform: uppercase;
+    color: #111;
+    font-size: 14px;
+    font-weight: bold;
   }
 }

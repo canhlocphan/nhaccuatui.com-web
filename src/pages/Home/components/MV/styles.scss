@@ -1,8 +1,8 @@
 .mv-container {
-  width: 100%;
   margin: 0 0 10px 0;
   border-bottom: #f3f3f3 solid 1px;
   padding: 0 0 10px 0;
+  width: 100%;
   .mv {
     position: relative;
     display: flex;
@@ -18,19 +18,19 @@
       background: rgba(0, 0, 0, 0.3);
     }
     &:hover .bg-video .icon-play {
-      opacity: 1;
       transition: all 0.5s ease;
+      opacity: 1;
     }
     .name-video-large {
       .large-video-name {
         font-size: 16px;
         &:hover {
-          color: rgb(0, 204, 255);
+          color: #3bb9eb;
         }
       }
     }
     &:hover .name-video-large .large-video-name {
-      color: rgb(30, 153, 190);
+      color: #3bb9eb;
     }
   }
 }

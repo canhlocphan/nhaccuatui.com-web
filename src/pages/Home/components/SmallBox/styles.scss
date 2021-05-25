@@ -10,26 +10,26 @@
     background: rgba(0, 0, 0, 0.3);
   }
   .view-mv {
+    display: flex;
     position: absolute;
     right: 0;
     z-index: 101;
-    display: flex;
     flex-direction: row;
+    background: url("https://stc-id.nixcdn.com/v11/images/bg_view_listen.png") left top;
     padding: 0 5px 0 15px;
-    font-size: 12px;
     line-height: 24px;
     color: #c7c7c7;
-    background: url("https://stc-id.nixcdn.com/v11/images/bg_view_listen.png") left top;
+    font-size: 12px;
     cursor: pointer;
     .icon-view {
-      width: 14px;
-      height: 14px;
       margin: 8px 3px 0 0;
       background: url("https://stc-id.nixcdn.com/v11/images/icon-repeat.png") 0 -237px no-repeat;
+      width: 14px;
+      height: 14px;
     }
   }
   &:hover .bg-video .icon-play {
-    opacity: 1;
     transition: opacity 0.5s linear;
+    opacity: 1;
   }
 }

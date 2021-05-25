@@ -1,17 +1,13 @@
 // libs
 import React from "react";
+// components
+import AlbumActionInfo from "../AlbumActionInfo";
 // others
 import "./styles.scss";
 
 const Album = ({ view, image }) => (
   <div className="album">
-    <div className="action-info">
-      <div className="view-listening">
-        <div className="icon-listening"></div>
-        <div>{view}</div>
-      </div>
-      <div className="icon-play"></div>
-    </div>
+    <AlbumActionInfo view={view} />
     <img className="avatar" src={image} alt="avatar"></img>
   </div>
 );

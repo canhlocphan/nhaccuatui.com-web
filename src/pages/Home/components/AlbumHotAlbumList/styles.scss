@@ -3,14 +3,14 @@
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-between;
-  padding: 0;
   margin: 0;
+  padding: 0;
   list-style: none;
   .box-album {
     display: flex;
     flex-direction: column;
-    width: 152px;
     margin-bottom: 10px;
+    width: 152px;
     cursor: pointer;
   }
 }

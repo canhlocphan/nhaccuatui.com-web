@@ -7,8 +7,8 @@ import AlbumHotAlbumList from "../AlbumHotAlbumList";
 import "./styles.scss";
 
 const AlbumHot = ({ albumHot, nameTitle }) => (
-  <div className="album-hot">
-    <div className="album-hot-container">
+  <div className="album-hot-wrapper">
+    <div className="album-hot">
       <TitleBoxKey nameTitle={nameTitle} />
       <AlbumHotAlbumList albumHot={albumHot} />
     </div>

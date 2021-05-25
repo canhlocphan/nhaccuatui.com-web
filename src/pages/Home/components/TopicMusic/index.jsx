@@ -6,7 +6,7 @@ import TopicList from "../TopicList";
 import "./styles.scss";
 
 const TopMusic = ({ topMusic, nameTitle }) => (
-  <div className="top-music-container">
+  <div className="top-music-wrapper">
     <TitleBoxKey nameTitle={nameTitle} />
     <TopicList topMusic={topMusic} />
   </div>
