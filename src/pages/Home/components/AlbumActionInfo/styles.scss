@@ -1,0 +1,22 @@
+.action-info {
+  position: absolute;
+  z-index: 2;
+  width: 152px;
+  height: 152px;
+  &:hover {
+    background: rgba(0, 0, 0, 0.3);
+  }
+  .icon-play {
+    display: block !important;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    visibility: visible;
+    opacity: 0;
+    z-index: 1001;
+    margin: -24px 0 0 -24px;
+    background: url("https://stc-id.nixcdn.com/v11/images/icon.png") left -28px no-repeat;
+    width: 48px;
+    height: 48px;
+  }
+}

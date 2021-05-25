@@ -8,8 +8,8 @@ import SmallVideoList from "../SmallVideoList";
 import "./styles.scss";
 
 const MvHot = ({ mvHot, nameTitle }) => (
-  <div className="mv-hot">
-    <div className="mv-hot-container">
+  <div className="mv-hot-wrapper">
+    <div className="mv-hot">
       <TitleBoxKey nameTitle={nameTitle} />
       <LargeVideoList home={mvHot} />
       <SmallVideoList home={mvHot} />

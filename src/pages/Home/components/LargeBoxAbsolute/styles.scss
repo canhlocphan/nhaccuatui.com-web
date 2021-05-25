@@ -12,11 +12,11 @@
     background: rgba(0, 0, 0, 0.3);
   }
   &:hover .name-video-large .large-video-name {
-    color: rgb(30, 153, 190);
     transition: all 0.5 linear;
+    color: #3bb9eb;
   }
   &:hover .bg-video .icon-play {
-    opacity: 1;
     transition: opacity 0.5s linear;
+    opacity: 1;
   }
 }

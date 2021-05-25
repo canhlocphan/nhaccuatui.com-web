@@ -7,7 +7,7 @@ import BoxContentHundred from "../BoxContentHundred";
 import "./styles.scss";
 
 const TopHundred = ({ topHundred }) => (
-  <div className="top-hundred-container">
+  <div className="top-hundred-wrapper">
     <TopHundredHead />
     <BoxContentHundred home={topHundred} />
     <div className="all">

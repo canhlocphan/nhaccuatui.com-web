@@ -1,22 +1,22 @@
 .navigation {
-  width: calc(33.333333% - 48px);
   margin: 0 48px 0 0;
+  width: calc(33.333333% - 48px);
   .f-title {
+    margin: 40px 0 8px 0;
+    padding: 0;
     width: 100%;
-    font-size: 14px;
-    color: rgba(0, 0, 0, 0.88);
-    font-weight: bold;
     text-transform: uppercase;
     line-height: 1.6;
-    padding: 0;
-    margin: 40px 0 8px 0;
+    color: rgba(0, 0, 0, 0.88);
+    font-size: 14px;
+    font-weight: bold;
   }
   .list-nav {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    list-style: none;
-    padding: 0;
     margin: 0;
+    padding: 0;
+    list-style: none;
   }
 }

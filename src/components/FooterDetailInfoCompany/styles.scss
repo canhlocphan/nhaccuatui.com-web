@@ -1,19 +1,19 @@
 .detail-info-company {
   .f-name {
-    width: 100%;
-    font-size: 16px;
-    color: #5f5e5e;
-    text-transform: uppercase;
-    font-weight: bold;
     margin: 0 0 8px 0;
+    width: 100%;
+    text-transform: uppercase;
     line-height: 1.4;
+    color: #5f5e5e;
+    font-size: 16px;
+    font-weight: bold;
     list-style: none;
   }
   .f-detail {
-    width: 100%;
     margin-bottom: 0;
-    font-size: 13px;
-    color: #5f5e5e;
+    width: 100%;
     line-height: 22px;
+    color: #5f5e5e;
+    font-size: 13px;
   }
 }

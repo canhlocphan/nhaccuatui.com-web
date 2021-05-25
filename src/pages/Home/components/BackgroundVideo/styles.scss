@@ -1,20 +1,20 @@
 .bg-video {
   cursor: pointer;
   .image {
+    margin-bottom: 5px;
     width: 100%;
     height: 100%;
-    margin-bottom: 5px;
   }
   .icon-play {
     position: absolute;
     z-index: 101;
     top: 42%;
     left: 47%;
+    visibility: visible;
+    opacity: 0;
     margin: -14px 0 0 -14px;
     width: 48px;
     height: 48px;
-    opacity: 0;
-    visibility: visible;
     img {
       width: 100%;
       height: 100%;

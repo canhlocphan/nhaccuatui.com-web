@@ -21,7 +21,7 @@ const TrendArtist = ({ trendArtist }) => {
     return () => clearInterval(time);
   });
   return (
-    <div className="trend-artist">
+    <div className="trend-artist-wrapper">
       <div className="trend-gallery">
         <MainTrendArtist image={imageDefault} artist={artist} />
         <TrendArtistSlide

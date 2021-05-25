@@ -7,8 +7,8 @@ import SmallVideoList from "../SmallVideoList";
 import "./styles.scss";
 
 const Karaoke = ({ karaoke, nameTitle }) => (
-  <div className="karaoke">
-    <div className="karaoke-container">
+  <div className="karaoke-wrapper">
+    <div className="karaoke">
       <TitleBoxKey nameTitle={nameTitle} />
       <SmallVideoList home={karaoke} />
     </div>

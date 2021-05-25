@@ -16,8 +16,8 @@ const SlideDefaultOption = ({ id, setId, imageDefault, setImageDefault, slideDef
     return () => clearInterval(time);
   }, [id, slideDefault, setId, setImageDefault]);
   return (
-    <div className="option-slide-wrapper">
-      <ul className="option-slide">
+    <div className="slide-option-wrapper">
+      <ul className="slide-option">
         {slideDefault.map((item) => (
           <SlideDefaultOptionItem
             key={item.id}

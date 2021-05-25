@@ -7,8 +7,8 @@ import SmallVideoList from "../SmallVideoList";
 import "./styles.scss";
 
 const Entertainment = ({ entertainment, nameTitle }) => (
-  <div className="entertainment">
-    <div className="entertainment-container">
+  <div className="entertainment-wrapper">
+    <div className="entertainment">
       <TitleBoxKey nameTitle={nameTitle} />
       <SmallVideoList home={entertainment} />
     </div>

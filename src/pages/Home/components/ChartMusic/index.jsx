@@ -10,7 +10,7 @@ import "./styles.scss";
 const ChartMusic = ({ chartMusic, nameTitle }) => {
   const [typeMusic, setTypeMusic] = useState(1);
   return (
-    <div className="chart-music-container">
+    <div className="chart-music-wrapper">
       <TitleBoxKey nameTitle={nameTitle} />
       <TabSelect typeMusic={typeMusic} setTypeMusic={setTypeMusic}></TabSelect>
       {typeMusic === 1 && <MusicList chartMusic={chartMusic.musicVietNam} typeMusic={typeMusic} />}

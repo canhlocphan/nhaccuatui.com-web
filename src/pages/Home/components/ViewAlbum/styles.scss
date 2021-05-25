@@ -1,0 +1,17 @@
+.view-listening {
+  position: absolute;
+  right: 0;
+  display: flex;
+  flex-direction: row;
+  background: url("https://stc-id.nixcdn.com/v11/images/bg_view_listen.png") left top;
+  padding: 0 5px 0 15px;
+  color: #c7c7c7;
+  font-size: 12px;
+  line-height: 24px;
+  .icon-listening {
+    margin: 8px 3px 0 0;
+    background: url("https://stc-id.nixcdn.com/v11/images/icon-repeat.png") 0 -202px no-repeat;
+    width: 14px;
+    height: 14px;
+  }
+}

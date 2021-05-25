@@ -5,7 +5,7 @@ import "./styles.scss";
 
 const SlideDefaultOptionItem = ({ item, imageDefault, handleImageDefault }) => (
   <li
-    className="option-slide-item"
+    className="slide-option-item"
     title={item.title}
     onMouseEnter={() => {
       handleImageDefault(item.id, item.large);

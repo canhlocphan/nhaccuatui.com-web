@@ -7,8 +7,8 @@ import ButtonPlaylist from "../ButtonPlaylist";
 import "./styles.scss";
 
 const DiscoveryPlayList = () => (
-  <div className="discovery-playlist">
-    <div className="background">
+  <div className="discovery-playlist-wrapper">
+    <div className="discovery-playlist">
       <SuggestionForYou />
       <ButtonPlaylist />
     </div>
