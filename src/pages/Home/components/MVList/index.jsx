@@ -1,16 +1,14 @@
 // libs
 import React from "react";
-
 // components
 import MV from "../MV";
 import SmallMV from "../SmallMV";
-
 // others
 import "./styles.scss";
 
-const MVList = (props) => (
+const MVList = ({ home }) => (
   <ul className="mv-list">
-    {props.home.map(({ id, large, image, title }) => {
+    {home.map(({ id, large, image, title }) => {
       const temp = title.split("-");
       const songName = temp[0];
       if (large === "1") {

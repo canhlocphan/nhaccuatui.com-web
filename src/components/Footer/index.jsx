@@ -10,7 +10,9 @@ import "./styles.scss";
 
 const Footer = () => (
   <div className="footer-wrapper">
-    <FooterUp footer={FooterSource}></FooterUp>
+    <div className="footer">
+      <FooterUp footer={FooterSource}></FooterUp>
+    </div>
     <FooterCopyright />
   </div>
 );

@@ -1,18 +1,17 @@
 // libs
 import React from "react";
-
 // others
 import "./styles.scss";
 
-const ButtonTab = (props) => (
+const ButtonTab = ({ active, id, titleName, setTypeMusic }) => (
   <div
-    className={`${props.active ? "btn-tab active" : "btn-tab"}`}
-    title={props.children}
+    className={`${active ? "btn-tab active" : "btn-tab"}`}
+    title={titleName}
     onClick={() => {
-      props.setTypeMusic(props.id);
+      setTypeMusic(id);
     }}
   >
-    {props.children}
+    {titleName}
   </div>
 );
 

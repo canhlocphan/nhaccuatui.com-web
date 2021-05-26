@@ -4,8 +4,8 @@ import React from "react";
 import TrendArtist from "../../components/TrendArtist";
 import DiscoveryPlayList from "../../components/DiscoveryPlaylist";
 import TocpicMusic from "../../components/TopicMusic";
-import ChartMV from "../../components/ChartMV";
 import ChartMusic from "../../components/ChartMusic";
+import ChartMV from "../../components/ChartMV";
 import TopHundred from "../../components/TopHundred";
 // others
 import "./styles.scss";
