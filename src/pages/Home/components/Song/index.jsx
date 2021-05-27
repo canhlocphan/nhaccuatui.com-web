@@ -8,10 +8,10 @@ import BackgroundSong from "../BackgroundSong";
 // others
 import "./styles.scss";
 
-const Song = (props) => (
+const Song = ({ image, songName, title }) => (
   <div className="song">
-    <BackgroundSong image={props.image}></BackgroundSong>
-    <SongInformation songName={props.songName} title={props.title}></SongInformation>
+    <BackgroundSong image={image}></BackgroundSong>
+    <SongInformation songName={songName} title={title}></SongInformation>
   </div>
 );
 

@@ -1,10 +1,10 @@
 .header-list {
   display: flex;
   flex-direction: row;
-  justify-content: center;
   align-self: center;
   margin: 0;
   padding: 0;
+  max-width: 1170px;
   list-style-type: none;
   text-align: center;
   li {
@@ -17,7 +17,7 @@
     font-style: normal;
   }
   li:hover {
-    color: rgb(0, 217, 255);
+    color: #3bb9eb;
     cursor: pointer;
   }
   li:hover .dropdown-menu {

@@ -1,25 +1,17 @@
 // libs
 import React from "react";
-
 // components
 import ButtonTab from "../ButtonTab";
-
 // others
 import "./styles.scss";
 
-const TabSelect = (props) => (
+const TabSelect = ({ typeMusic, setTypeMusic }) => (
   <div className="tab-select-container">
-    <ButtonTab active={props.typeMusic === 1} setTypeMusic={props.setTypeMusic} id={1}>
-      Việt Nam
-    </ButtonTab>
+    <ButtonTab active={typeMusic === 1} setTypeMusic={setTypeMusic} id={1} titleName="Việt Nam" />
     <span className="space"></span>
-    <ButtonTab active={props.typeMusic === 2} setTypeMusic={props.setTypeMusic} id={2}>
-      Âu Mỹ
-    </ButtonTab>
+    <ButtonTab active={typeMusic === 2} setTypeMusic={setTypeMusic} id={2} titleName="Âu mỹ" />
     <span className="space"></span>
-    <ButtonTab active={props.typeMusic === 3} setTypeMusic={props.setTypeMusic} id={3}>
-      Hàn Quốc
-    </ButtonTab>
+    <ButtonTab active={typeMusic === 3} setTypeMusic={setTypeMusic} id={3} titleName="Hàn Quốc" />
   </div>
 );
 

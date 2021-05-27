@@ -8,7 +8,7 @@ import "./styles.scss";
 
 const CooperationFooter = ({ footer }) => (
   <div className="footer-cooperation">
-    <FooterTitleCooperation>Liên kết và hợp tác</FooterTitleCooperation>
+    <FooterTitleCooperation titleName="Liên kết và hợp tác"></FooterTitleCooperation>
     <FooterBoxCooperationList footer={footer}></FooterBoxCooperationList>
   </div>
 );

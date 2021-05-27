@@ -8,12 +8,7 @@ import "./styles.scss";
 const HeaderTopMenu = ({ header }) => (
   <>
     {header.HeaderList.map(({ id, name, list }) => {
-      if (name === "Khác")
-        return (
-          <li className="more" key={id} list={list}>
-            <HeaderDropdownMenu list={list}></HeaderDropdownMenu>
-          </li>
-        );
+      if (name === "Khác") return <li className="more" key={id}></li>;
       return (
         <li key={id} style={{ paddingTop: "3px" }} list={list}>
           {name}

@@ -1,7 +1,7 @@
 // libs
 import axios from "axios";
 
-const BASE_URL = "https://my-json-server.typicode.com/canhlocphan/nhaccuatui.com-web-backend";
+const BASE_URL = "https://my-json-server.typicode.com/canhlocphan/backend-nhaccuatui.com-web";
 
 const api = {
   call() {

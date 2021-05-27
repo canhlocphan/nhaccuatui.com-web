@@ -1,7 +1,7 @@
 import api from "../api";
 
 const HomeServices = {
-  getSlideDefault: () => api.call().get("/slide-default"),
+  getAlbumHot: (param) => api.call().get(`/album-hot?${param}`),
   getListeningWhatToday: (param) => api.call().get(`/listening-what-today?${param}`),
 };
 
