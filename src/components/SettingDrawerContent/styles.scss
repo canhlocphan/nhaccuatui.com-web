@@ -1,0 +1,12 @@
+.setting-drawer-content-wrapper {
+  transition: all ease-in-out 0.3s;
+  padding: 24px;
+  height: 753px;
+  background: #ffff;
+  font-size: 14px;
+  .setting-drawer-content {
+    display: flex;
+    flex-direction: column;
+    width: 252px;
+  }
+}

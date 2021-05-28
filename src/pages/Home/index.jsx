@@ -3,11 +3,13 @@ import React, { useContext } from "react";
 // components
 import BoxLeft from "./mains/BoxLeft";
 import BoxRight from "./mains/BoxRight";
+import SettingDrawer from "../../components/SettingDrawer";
 // mocks
 import HomeData from "../../mocks/Home";
+// useContext
+import { LanguageContext } from "../../context";
 // others
 import "./styles.scss";
-import { LanguageContext } from "../../context";
 
 const Home = () => {
   const { defaultLanguage } = useContext(LanguageContext);
@@ -17,6 +19,7 @@ const Home = () => {
         <BoxLeft Home={HomeData} defaultLanguage={defaultLanguage} />
         <BoxRight Home={HomeData} defaultLanguage={defaultLanguage} />
       </div>
+      <SettingDrawer />
     </div>
   );
 };
