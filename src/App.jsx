@@ -6,6 +6,7 @@ import { Provider } from "react-redux";
 import store from "./store";
 // components
 import Header from "./components/Header";
+import SettingDrawer from "./components/SettingDrawer";
 import Footer from "./components/Footer";
 // routers
 import routes from "./routers/appRouter";
@@ -16,6 +17,7 @@ const App = () => (
     <LanguageProvider>
       <Router>
         <Header />
+        <SettingDrawer />
         <Switch>
           <Redirect from="/nhaccuatui.com-web" to="/" exact />
           {routes.map(({ id, path, component }) => (

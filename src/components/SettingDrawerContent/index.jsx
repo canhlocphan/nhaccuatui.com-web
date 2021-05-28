@@ -1,16 +1,30 @@
 // libs
-import React from "react";
+import React, { useContext } from "react";
 // components
-import ThemeColor from "../ThemeColor";
+import DrawerLanguage from "../DrawerLanguage";
+import DrawerThemeColor from "../DrawerThemeColor";
+import DrawerHeader from "../DrawerHeader";
+// context
+import { DrawerContext } from "../../context";
 // others
 import "./styles.scss";
 
-const SettingDrawerContent = () => (
-  <div className="setting-drawer-content-wrapper">
-    <div className="setting-drawer-content">
-      <ThemeColor />
+const SettingDrawerContent = ({ defaultThemeColor, handleChangeThemeColor }) => {
+  const { defaultLanguage } = useContext(DrawerContext);
+  const [langTitle, themeTitle, fixedHeader] = defaultLanguage.drawer.split("-");
+  return (
+    <div className="setting-drawer-content-wrapper">
+      <div className="setting-drawer-content">
+        <DrawerLanguage title={langTitle} defaultLanguage={defaultLanguage} />
+        <DrawerThemeColor
+          title={themeTitle}
+          defaultThemeColor={defaultThemeColor}
+          handleChangeThemeColor={handleChangeThemeColor}
+        />
+        <DrawerHeader title={fixedHeader} />
+      </div>
     </div>
-  </div>
-);
+  );
+};
 
 export default SettingDrawerContent;
