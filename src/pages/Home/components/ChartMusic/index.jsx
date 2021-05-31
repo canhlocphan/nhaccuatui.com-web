@@ -13,9 +13,9 @@ const ChartMusic = ({ chartMusic, nameTitle }) => {
     <div className="chart-music-wrapper">
       <TitleBoxKey nameTitle={nameTitle} />
       <TabSelect typeMusic={typeMusic} setTypeMusic={setTypeMusic}></TabSelect>
-      {typeMusic === 1 && <MusicList chartMusic={chartMusic.musicVietNam} typeMusic={typeMusic} />}
-      {typeMusic === 2 && <MusicList chartMusic={chartMusic.musicUS} typeMusic={typeMusic} />}
-      {typeMusic === 3 && <MusicList chartMusic={chartMusic.musicK} typeMusic={typeMusic} />}
+      {typeMusic === 1 && <MusicList chartMusic={chartMusic.musicVietNam} />}
+      {typeMusic === 2 && <MusicList chartMusic={chartMusic.musicUS} />}
+      {typeMusic === 3 && <MusicList chartMusic={chartMusic.musicK} />}
     </div>
   );
 };

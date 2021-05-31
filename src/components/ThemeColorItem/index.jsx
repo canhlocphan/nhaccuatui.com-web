@@ -1,13 +1,18 @@
 // libs
 import React from "react";
+import styled from "styled-components";
 // others
 import "./styles.scss";
 import { CheckOutlined } from "@ant-design/icons";
 
+const ColorItem = styled.div`
+  background: ${(props) => props.color};
+`;
+
 const ThemeColorItem = ({ color, defaultThemeColor, handleChangeThemeColor }) => (
-  <li className="theme-color-item" style={{ background: `${color}` }} onClick={() => handleChangeThemeColor(color)}>
+  <ColorItem className="theme-color-item" color={color} onClick={() => handleChangeThemeColor(color)}>
     {color === defaultThemeColor ? <CheckOutlined /> : <></>}
-  </li>
+  </ColorItem>
 );
 
 export default ThemeColorItem;

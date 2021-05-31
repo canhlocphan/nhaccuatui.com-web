@@ -6,10 +6,10 @@ import BackgroundSmallMV from "../BackgroundSmallMV";
 // others
 import "./styles.scss";
 
-const SmallMV = ({ songName, image, title }) => (
+const SmallMV = ({ songName, image, title, id }) => (
   <li className="small-mv">
-    <BackgroundSmallMV songName={songName} image={image}></BackgroundSmallMV>
-    <SongInformation songName={songName} title={title}></SongInformation>
+    <BackgroundSmallMV songName={songName} image={image} id={id} />
+    <SongInformation songName={songName} title={title} />
   </li>
 );
 

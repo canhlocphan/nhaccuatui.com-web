@@ -1,5 +1,6 @@
 // libs
 import React from "react";
+import classNames from "classnames";
 // hooks
 import useRouter from "../../../../hooks/useRouter";
 // others
@@ -10,6 +11,7 @@ const SlideDefaultOptionItem = ({ item, imageDefault, handleImageDefault }) => {
   const handleChangePage = () => {
     history.push("/about");
   };
+  const className = classNames(`${imageDefault === item.large ? "active" : "none"}`);
   return (
     <li
       className="slide-option-item"
@@ -19,8 +21,8 @@ const SlideDefaultOptionItem = ({ item, imageDefault, handleImageDefault }) => {
       }}
       onClick={handleChangePage}
     >
-      <span className={`${imageDefault === item.large ? "active" : "none"}`}></span>
-      <img src={item.small} alt="option-slide-item" style={{ cursor: "pointer" }}></img>
+      <span className={className} />
+      <img src={item.small} alt="option-slide-item" />
     </li>
   );
 };

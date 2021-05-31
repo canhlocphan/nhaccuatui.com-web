@@ -10,11 +10,12 @@ import SettingDrawer from "./components/SettingDrawer";
 import Footer from "./components/Footer";
 // routers
 import routes from "./routers/appRouter";
-import LanguageProvider from "./context";
+// context provider
+import DrawerProvider from "./context";
 
 const App = () => (
   <Provider store={store}>
-    <LanguageProvider>
+    <DrawerProvider>
       <Router>
         <Header />
         <SettingDrawer />
@@ -26,7 +27,7 @@ const App = () => (
         </Switch>
         <Footer />
       </Router>
-    </LanguageProvider>
+    </DrawerProvider>
   </Provider>
 );
 

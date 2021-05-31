@@ -6,10 +6,10 @@ import LargeVideoName from "../LargeVideoName";
 // others
 import "./styles.scss";
 
-const LargeVideoInformation = (props) => (
+const LargeVideoInformation = ({ songName, title }) => (
   <div className="name-video-large">
-    <LargeVideoName songName={props.songName} title={props.title} />
-    <NameSingerList title={props.title} />
+    <LargeVideoName songName={songName} title={title} />
+    <NameSingerList title={title} />
   </div>
 );
 

@@ -4,11 +4,11 @@ import React from "react";
 // others
 import "./styles.scss";
 
-const MusicFirstRank = (props) => (
+const MusicFirstRank = ({ image, id }) => (
   <div className="first-rank">
     <div className="image">
-      <img src={props.image} alt="first-rank-img"></img>
-      <div className="one-rank">{props.id}</div>
+      <img src={image} alt="first-rank-img"></img>
+      <div className="one-rank">{id}</div>
     </div>
   </div>
 );

@@ -8,17 +8,18 @@ import useRouter from "../../../../hooks/useRouter";
 // others
 import "./styles.scss";
 
-const MV = (props) => {
+const MV = ({ image, songName, title, id }) => {
   const { history } = useRouter();
   const handleChangePage = () => {
     history.push("/about");
   };
   return (
-    <li className="mv-container">
+    <li className="mv-wrapper">
       <div className="mv" onClick={handleChangePage}>
         <div className="overlay"></div>
-        <BackgroundVideo image={props.image}></BackgroundVideo>
-        <LargeVideoInformation songName={props.songName} title={props.title}></LargeVideoInformation>
+        <div className="mv-rank">{id}</div>
+        <BackgroundVideo image={image} />
+        <LargeVideoInformation songName={songName} title={title} />
       </div>
     </li>
   );
