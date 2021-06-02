@@ -13,9 +13,9 @@ const ChartMV = ({ chartMV, nameTitle }) => {
     <div className="chart-mv-wrapper">
       <TitleBoxKey nameTitle={nameTitle} />
       <TabSelect typeMusic={typeMusic} setTypeMusic={setTypeMusic}></TabSelect>
-      {typeMusic === 1 && <MVList home={chartMV.bXHMVVN} typeMusic={typeMusic} />}
-      {typeMusic === 2 && <MVList home={chartMV.bXHMVUS} typeMusic={typeMusic} />}
-      {typeMusic === 3 && <MVList home={chartMV.bXHMVK} typeMusic={typeMusic} />}
+      {typeMusic === 1 && <MVList home={chartMV.bXHMVVN} />}
+      {typeMusic === 2 && <MVList home={chartMV.bXHMVUS} />}
+      {typeMusic === 3 && <MVList home={chartMV.bXHMVK} />}
     </div>
   );
 };

@@ -12,9 +12,9 @@ const MVList = ({ home }) => (
       const temp = title.split("-");
       const songName = temp[0];
       if (large === "1") {
-        return <MV key={id} image={image} title={title} songName={songName}></MV>;
+        return <MV key={id} id={id} image={image} title={title} songName={songName} />;
       }
-      return <SmallMV key={id} image={image} songName={songName} title={title}></SmallMV>;
+      return <SmallMV key={id} id={id} image={image} songName={songName} title={title} />;
     })}
   </ul>
 );

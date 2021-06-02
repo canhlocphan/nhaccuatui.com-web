@@ -1,4 +1,4 @@
-.mv-container {
+.mv-wrapper {
   margin: 0 0 10px 0;
   border-bottom: #f3f3f3 solid 1px;
   padding: 0 0 10px 0;
@@ -21,7 +21,22 @@
       transition: all 0.5s ease;
       opacity: 1;
     }
+    .mv-rank {
+      display: flex;
+      position: absolute;
+      bottom: 0;
+      justify-content: center;
+      align-items: center;
+      z-index: 20;
+      background: #e74c3c;
+      width: 46px;
+      height: 46px;
+      color: #ffff;
+      font-size: 20px;
+    }
     .name-video-large {
+      left: 50px;
+      bottom: -7px;
       .large-video-name {
         font-size: 16px;
         &:hover {
