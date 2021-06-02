@@ -5,15 +5,22 @@
   width: auto;
   text-transform: uppercase;
   line-height: 36px;
-  color: #23262d;
   font-size: 26px;
   font-weight: 400;
   .title {
+    position: relative;
     padding: 0 20px 0 0;
-    background: url("https://stc-id.nixcdn.com/v11/images/icon-repeat.png") right -155px no-repeat;
     text-transform: uppercase;
-    color: #2daaed;
     font-weight: 400 !important;
     cursor: pointer;
+    .title-name {
+      margin-right: 10px;
+    }
+    .icon-title-box-key {
+      position: absolute;
+      top: 11px;
+      right: 0;
+      font-size: 18px;
+    }
   }
 }

@@ -1,16 +1,21 @@
 // libs
-import React from "react";
+import React, { useContext } from "react";
 // components
 import HeaderList from "../HeaderList";
+// context
+import { DrawerContext } from "../../context";
 // others
 import "./styles.scss";
 
-const Header = () => (
-  <div className="header-wrapper">
-    <div className="header">
-      <HeaderList />
+const Header = () => {
+  const { fixedHeader } = useContext(DrawerContext);
+  return (
+    <div className="header-wrapper" style={{ position: `${fixedHeader ? "fixed" : "absolute"}` }}>
+      <div className="header">
+        <HeaderList />
+      </div>
     </div>
-  </div>
-);
+  );
+};
 
 export default Header;

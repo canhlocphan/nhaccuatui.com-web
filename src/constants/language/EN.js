@@ -1,4 +1,6 @@
 const EN = {
+  drawer: "Language-Theme Color-Fixed Header",
+  language: "Vietnamese-English",
   listeningWhatToday: "LISTENING WHAT TODAY",
   albumHot: "NEW RELEASE",
   mvHot: "MV HOT",

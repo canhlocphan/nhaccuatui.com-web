@@ -5,12 +5,13 @@ import BoxLeft from "./mains/BoxLeft";
 import BoxRight from "./mains/BoxRight";
 // mocks
 import HomeData from "../../mocks/Home";
+// useContext
+import { DrawerContext } from "../../context";
 // others
 import "./styles.scss";
-import { LanguageContext } from "../../context";
 
 const Home = () => {
-  const { defaultLanguage } = useContext(LanguageContext);
+  const { defaultLanguage } = useContext(DrawerContext);
   return (
     <div className="home-wrapper">
       <div className="home">

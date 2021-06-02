@@ -1,0 +1,15 @@
+.setting-drawer-wrapper {
+  display: flex;
+  position: fixed;
+  right: 0;
+  flex-direction: row;
+  align-items: center;
+  z-index: 9999;
+  transform: translate(0);
+  transition: all ease-in-out 0.3s;
+  width: 348px;
+  height: 753px;
+  &.setting {
+    transform: translate(300px);
+  }
+}

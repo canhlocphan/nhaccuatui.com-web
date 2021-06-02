@@ -1,0 +1,21 @@
+.drawer-header-wrapper {
+  position: relative;
+  margin-bottom: 24px;
+  .drawer-header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 13px;
+    color: #000;
+    font-weight: bold;
+    .drawer-header-switch {
+      position: absolute;
+      right: 0;
+      width: 35px;
+      height: 15px;
+      .ant-switch-handle {
+        width: 11px;
+        height: 11px;
+      }
+    }
+  }
+}

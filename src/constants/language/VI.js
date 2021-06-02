@@ -1,4 +1,6 @@
 const VI = {
+  drawer: "Ngôn Ngữ-Màu Chủ Đề-Fixed Header",
+  language: "Tiếng Việt-Tiếng Anh",
   listeningWhatToday: "NGHE GÌ HÔM NAY",
   albumHot: "MỚI PHÁT HÀNH",
   mvHot: "MV HOT",

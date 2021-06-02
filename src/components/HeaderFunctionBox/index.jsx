@@ -1,20 +1,16 @@
 // libs
-import React, { useContext } from "react";
-import { LanguageContext } from "../../context";
+import React from "react";
 // others
 import "./styles.scss";
 
-const HeaderFunctionBox = () => {
-  const { handleChangeVI, handleChangeEN } = useContext(LanguageContext);
-  return (
-    <li className="function">
-      <div className="function-listen" title="Vietnamese" onClick={handleChangeVI}>
-        VI
-      </div>
-      <div className="function-upload" title="English" onClick={handleChangeEN}>
-        EN
-      </div>
-    </li>
-  );
-};
+const HeaderFunctionBox = () => (
+  <li className="function">
+    <div className="function-listen">
+      <img src="https://stc-id.nixcdn.com/v11/images/header_new/ic_head_new.png" alt="listen"></img>
+    </div>
+    <div className="function-upload">
+      <img src="https://stc-id.nixcdn.com/v11/images/header_new/ic_upload_new.png" alt="upload"></img>
+    </div>
+  </li>
+);
 export default HeaderFunctionBox;
